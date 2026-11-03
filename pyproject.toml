@@ -28,7 +28,9 @@ app = [
 ]
 docs = [
     "pylode>=3.0",
-    "kurra==3.0.5",  # newer kurra versions break pyLODE (get_missing_labels was removed)
+    # Newer kurra versions break pyLODE (get_missing_labels was removed). Only Python 3.12
+    # and newer can install this version, so the ontology page is built on 3.12.
+    "kurra==3.0.5; python_version >= '3.12'",
 ]
 
 [tool.setuptools.packages.find]

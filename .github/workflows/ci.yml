@@ -26,4 +26,5 @@ jobs:
       - name: SHACL validation and generated files
         run: make validate
       - name: Build the documentation
+        if: matrix.python-version == '3.12'
         run: make docs

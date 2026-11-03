@@ -21,7 +21,7 @@ python -m semlab validate                     # SHACL: conforms
 python -m streamlit run app/streamlit_app.py  # open http://localhost:8501
 ```
 
-Requires Python 3.11 or newer. No database, no internet needed to run the app.
+Requires Python 3.11 or newer. No database, no internet needed to run the app. Building the ontology page with `make docs` needs Python 3.12 or newer.
 
 | | |
 | --- | --- |
