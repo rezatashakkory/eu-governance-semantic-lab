@@ -1,0 +1,156 @@
+# EU Legal Acts Ontology (OWL), source of truth.
+# Independent learning project, not an official EU ontology.
+
+@prefix lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# ----------------------------------------------------------------------
+# Ontology header
+# ----------------------------------------------------------------------
+
+<https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> a owl:Ontology ;
+    dct:title "EU Legal Acts Ontology"@en ;
+    dct:description "A small OWL ontology for describing EU legal acts, how they relate to each other, and which topics from the EU Data Governance Thesaurus they cover. Independent learning project, not an official EU ontology."@en ;
+    dct:creator <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori> ;
+    dct:issued "2026-11-03"^^xsd:date ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    owl:versionInfo "1.0.0" .
+
+# ----------------------------------------------------------------------
+# Classes
+# ----------------------------------------------------------------------
+
+lab:LegalAct a owl:Class ;
+    rdfs:label "Legal act"@en ;
+    rdfs:comment "An act adopted by the EU institutions, such as a regulation or a directive."@en ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:Regulation a owl:Class ;
+    rdfs:subClassOf lab:LegalAct ;
+    owl:disjointWith lab:Directive ;
+    rdfs:label "Regulation"@en ;
+    rdfs:comment "A legal act that applies directly in all EU Member States."@en ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:ImplementingRegulation a owl:Class ;
+    rdfs:subClassOf lab:Regulation ;
+    rdfs:label "Implementing regulation"@en ;
+    rdfs:comment "A regulation adopted by the Commission to set uniform conditions for applying another act."@en ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:Directive a owl:Class ;
+    rdfs:subClassOf lab:LegalAct ;
+    rdfs:label "Directive"@en ;
+    rdfs:comment "A legal act that sets goals which Member States must reach by passing their own national laws."@en ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:Authority a owl:Class ;
+    rdfs:label "Authority"@en ;
+    rdfs:comment "A board or body that has tasks under a legal act."@en ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:Obligation a owl:Class ;
+    rdfs:label "Obligation"@en ;
+    rdfs:comment "A duty that a legal act places on a party."@en ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( lab:LegalAct lab:Authority lab:Obligation ) .
+
+# ----------------------------------------------------------------------
+# Object properties
+# ----------------------------------------------------------------------
+
+lab:amends a owl:ObjectProperty, owl:AsymmetricProperty ;
+    rdfs:label "amends"@en ;
+    rdfs:comment "The subject act changes the text of the object act."@en ;
+    rdfs:domain lab:LegalAct ;
+    rdfs:range lab:LegalAct ;
+    owl:inverseOf lab:amendedBy ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:amendedBy a owl:ObjectProperty ;
+    rdfs:label "amended by"@en ;
+    rdfs:comment "The subject act has its text changed by the object act."@en ;
+    rdfs:domain lab:LegalAct ;
+    rdfs:range lab:LegalAct ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:repeals a owl:ObjectProperty, owl:AsymmetricProperty ;
+    rdfs:label "repeals"@en ;
+    rdfs:comment "The subject act replaces the object act, which stops being in force."@en ;
+    rdfs:domain lab:LegalAct ;
+    rdfs:range lab:LegalAct ;
+    owl:inverseOf lab:repealedBy ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:repealedBy a owl:ObjectProperty ;
+    rdfs:label "repealed by"@en ;
+    rdfs:comment "The subject act is replaced by the object act."@en ;
+    rdfs:domain lab:LegalAct ;
+    rdfs:range lab:LegalAct ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:isBasedOn a owl:ObjectProperty ;
+    rdfs:label "is based on"@en ;
+    rdfs:comment "The subject act is adopted on the basis of the object act, for example an implementing act and its parent act."@en ;
+    rdfs:domain lab:LegalAct ;
+    rdfs:range lab:LegalAct ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:hasTopic a owl:ObjectProperty ;
+    rdfs:label "has topic"@en ;
+    rdfs:comment "Links an act to a concept of the EU Data Governance Thesaurus that the act covers."@en ;
+    rdfs:domain lab:LegalAct ;
+    rdfs:range skos:Concept ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:regulates a owl:ObjectProperty ;
+    rdfs:subPropertyOf lab:hasTopic ;
+    rdfs:label "regulates"@en ;
+    rdfs:comment "Links an act to the main subject matter it regulates. Every regulated subject is also a topic of the act."@en ;
+    rdfs:domain lab:LegalAct ;
+    rdfs:range skos:Concept ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:providesFor a owl:ObjectProperty ;
+    rdfs:label "provides for"@en ;
+    rdfs:comment "The act sets up, or requires the setting up of, the board or body."@en ;
+    rdfs:domain lab:LegalAct ;
+    rdfs:range lab:Authority ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:imposesObligation a owl:ObjectProperty ;
+    rdfs:label "imposes obligation"@en ;
+    rdfs:comment "The act places the duty on a party."@en ;
+    rdfs:domain lab:LegalAct ;
+    rdfs:range lab:Obligation ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:hasELI a owl:ObjectProperty ;
+    rdfs:label "has ELI"@en ;
+    rdfs:comment "Links an act to its European Legislation Identifier, a stable URI for legislation."@en ;
+    rdfs:domain lab:LegalAct ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+# ----------------------------------------------------------------------
+# Datatype and annotation properties
+# ----------------------------------------------------------------------
+
+lab:hasCELEX a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label "has CELEX number"@en ;
+    rdfs:comment "The CELEX number of the act, the identifier used by EUR-Lex. An act has exactly one."@en ;
+    rdfs:domain lab:LegalAct ;
+    rdfs:range xsd:string ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+
+lab:pendingReview a owl:AnnotationProperty ;
+    rdfs:label "pending review"@en ;
+    rdfs:comment "A language code (for example fr or de) whose labels on this concept have not yet been checked by a native speaker."@en ;
+    rdfs:isDefinedBy <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
