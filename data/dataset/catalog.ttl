@@ -1,0 +1,137 @@
+# DCAT-AP style catalog description of the datasets in this repository, source of truth.
+# Inspired by DCAT-AP, it does not claim formal conformance.
+
+@prefix cat: <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/catalog/> .
+@prefix ds: <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/dataset/> .
+@prefix dist: <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/> .
+@prefix agent: <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+cat:eu-governance-semantic-lab a dcat:Catalog ;
+    dct:title "EU Data Governance Semantic Lab Catalog"@en ;
+    dct:description "Catalog of the linked datasets published by the EU Data Governance Semantic Lab, an independent learning project."@en ;
+    dct:publisher agent:reza-tashakkori ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dct:issued "2026-11-03"^^xsd:date ;
+    foaf:homepage <https://github.com/rezatashakkory/eu-governance-semantic-lab> ;
+    dcat:dataset ds:thesaurus, ds:ontology, ds:acts .
+
+agent:reza-tashakkori a foaf:Agent ;
+    foaf:name "Reza Tashakkori" .
+
+ds:thesaurus a dcat:Dataset ;
+    dct:title "EU Data Governance Thesaurus"@en ;
+    dct:description "A multilingual SKOS thesaurus (English, French, German) with 68 concepts on data protection, data governance, AI governance, open data and reuse, digital resilience, and data quality and metadata. French and German labels are pending review unless taken from EuroVoc."@en ;
+    dct:publisher agent:reza-tashakkori ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>, <http://publications.europa.eu/resource/authority/language/FRA>, <http://publications.europa.eu/resource/authority/language/DEU> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE>, <http://publications.europa.eu/resource/authority/data-theme/TECH> ;
+    dcat:keyword "thesaurus"@en, "SKOS"@en, "data governance"@en, "multilingual"@en ;
+    dct:issued "2026-11-03"^^xsd:date ;
+    dct:modified "2026-11-03"^^xsd:date ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dcat:landingPage <https://github.com/rezatashakkory/eu-governance-semantic-lab> ;
+    dcat:distribution dist:thesaurus-ttl, dist:thesaurus-jsonld, dist:thesaurus-rdf .
+
+dist:thesaurus-ttl a dcat:Distribution ;
+    dct:title "EU Data Governance Thesaurus (Turtle)"@en ;
+    dcat:accessURL <https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/vocabulary/eu-data-governance.ttl> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/vocabulary/eu-data-governance.ttl> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> .
+
+dist:thesaurus-jsonld a dcat:Distribution ;
+    dct:title "EU Data Governance Thesaurus (JSON-LD)"@en ;
+    dcat:accessURL <https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/eu-data-governance.jsonld> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/eu-data-governance.jsonld> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> .
+
+dist:thesaurus-rdf a dcat:Distribution ;
+    dct:title "EU Data Governance Thesaurus (RDF/XML)"@en ;
+    dcat:accessURL <https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/eu-data-governance.rdf> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/eu-data-governance.rdf> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/rdf+xml> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> .
+
+ds:ontology a dcat:Dataset ;
+    dct:title "EU Legal Acts Ontology"@en ;
+    dct:description "A small OWL ontology with classes for legal acts, regulations, directives, authorities and obligations, and properties such as amends, repeals, has topic and has CELEX number."@en ;
+    dct:publisher agent:reza-tashakkori ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+    dcat:keyword "ontology"@en, "OWL"@en, "legal acts"@en ;
+    dct:issued "2026-11-03"^^xsd:date ;
+    dct:modified "2026-11-03"^^xsd:date ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dcat:landingPage <https://github.com/rezatashakkory/eu-governance-semantic-lab> ;
+    dcat:distribution dist:ontology-ttl, dist:ontology-jsonld, dist:ontology-rdf .
+
+dist:ontology-ttl a dcat:Distribution ;
+    dct:title "EU Legal Acts Ontology (Turtle)"@en ;
+    dcat:accessURL <https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/ontology/legal-acts.ttl> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/ontology/legal-acts.ttl> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> .
+
+dist:ontology-jsonld a dcat:Distribution ;
+    dct:title "EU Legal Acts Ontology (JSON-LD)"@en ;
+    dcat:accessURL <https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/legal-acts-ontology.jsonld> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/legal-acts-ontology.jsonld> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> .
+
+dist:ontology-rdf a dcat:Distribution ;
+    dct:title "EU Legal Acts Ontology (RDF/XML)"@en ;
+    dcat:accessURL <https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/legal-acts-ontology.rdf> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/legal-acts-ontology.rdf> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/rdf+xml> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> .
+
+ds:acts a dcat:Dataset ;
+    dct:title "EU Legal Acts on Data and AI Governance"@en ;
+    dct:description "Twenty EU legal acts on data protection, data governance, AI, open data and digital resilience, with CELEX numbers, ELI identifiers, official English titles, document dates, legal relations and links to thesaurus topics."@en ;
+    dct:publisher agent:reza-tashakkori ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+    dcat:keyword "EU law"@en, "CELEX"@en, "ELI"@en, "linked data"@en ;
+    dct:issued "2026-11-03"^^xsd:date ;
+    dct:modified "2026-11-03"^^xsd:date ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dcat:landingPage <https://github.com/rezatashakkory/eu-governance-semantic-lab> ;
+    dcat:distribution dist:acts-ttl, dist:acts-jsonld, dist:acts-rdf .
+
+dist:acts-ttl a dcat:Distribution ;
+    dct:title "EU Legal Acts on Data and AI Governance (Turtle)"@en ;
+    dcat:accessURL <https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dataset/legal-acts.ttl> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dataset/legal-acts.ttl> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> .
+
+dist:acts-jsonld a dcat:Distribution ;
+    dct:title "EU Legal Acts on Data and AI Governance (JSON-LD)"@en ;
+    dcat:accessURL <https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/legal-acts.jsonld> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/legal-acts.jsonld> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> .
+
+dist:acts-rdf a dcat:Distribution ;
+    dct:title "EU Legal Acts on Data and AI Governance (RDF/XML)"@en ;
+    dcat:accessURL <https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/legal-acts.rdf> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/legal-acts.rdf> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/rdf+xml> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> .
