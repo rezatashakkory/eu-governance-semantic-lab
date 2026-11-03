@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parent.parent
 MARKDOWN = sorted(
     p
     for p in ROOT.rglob("*.md")
-    if not any(part in {".venv", ".git", ".cache", "node_modules"} for part in p.parts)
+    if not any(part.startswith(".") for part in p.relative_to(ROOT).parts)
 )
 
 EN_DASH = chr(0x2013)
