@@ -1,5 +1,6 @@
 # EU Data Governance Semantic Lab
 
+[![CI](https://github.com/rezatashakkory/eu-governance-semantic-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/rezatashakkory/eu-governance-semantic-lab/actions/workflows/ci.yml)
 ![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-1E3A5F)
 ![Code: MIT](https://img.shields.io/badge/code-MIT-0F766E)
 ![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-0F766E)
@@ -104,7 +105,7 @@ More: `python -m semlab queries 11` runs one query, `python -m semlab reason` sh
 - **EuroVoc links** are the author's judgment and should be reviewed by an expert. EuroVoc labels keep EuroVoc's own terms, see [docs/sources_and_licenses.md](docs/sources_and_licenses.md).
 - **DCAT-AP style, not certified.** No official DCAT-AP validation was run.
 - **Definitions** cite whole acts, not articles.
-- `make` could not be run on the development machine, which is Windows without `make`. Its commands were run directly, and CI runs them through `make`.
+- `make` is not installed on the Windows development machine. The Makefile is run by CI on Linux for Python 3.11 and 3.12, and on Windows you can run the plain commands in the table above.
 
 ## Documentation
 
