@@ -1,0 +1,802 @@
+# EU Data Governance Thesaurus (SKOS), source of truth.
+# Independent learning project, not an official EU vocabulary.
+# French and German labels marked with lab:pendingReview still need a human check.
+# Labels taken from EuroVoc (concepts with ev_labels) are not flagged.
+
+@prefix cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/> .
+@prefix sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/> .
+@prefix act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/> .
+@prefix lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+sch:eu-data-governance a skos:ConceptScheme ;
+    dct:title "EU Data Governance Thesaurus"@en ;
+    dct:description "A small multilingual thesaurus (English, French, German) on EU data and AI governance: data protection, data governance, AI governance, open data and reuse, digital resilience, and data quality and metadata."@en ;
+    dct:creator <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori> ;
+    dct:issued "2026-11-03"^^xsd:date ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+                 <http://publications.europa.eu/resource/authority/language/FRA>,
+                 <http://publications.europa.eu/resource/authority/language/DEU> ;
+    owl:versionInfo "1.0.0" ;
+    skos:scopeNote "Definitions are written in English. French and German labels are marked pending review unless they come from EuroVoc."@en ;
+    skos:hasTopConcept cpt:data-protection, cpt:data-governance, cpt:ai-governance, cpt:open-data-and-reuse, cpt:digital-resilience, cpt:data-quality-and-metadata .
+
+<https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori> a foaf:Person ;
+    foaf:name "Reza Tashakkori" .
+
+# ----------------------------------------------------------------------
+# Data protection
+# ----------------------------------------------------------------------
+
+cpt:data-protection a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:topConceptOf sch:eu-data-governance ;
+    skos:prefLabel "Data protection"@en,
+                   "protection des données"@fr,
+                   "Datenschutz"@de ;
+    skos:definition "Rules and practices that protect individuals and their personal data, and the rights and freedoms linked to it."@en ;
+    skos:narrower cpt:personal-data, cpt:data-subject, cpt:data-controller, cpt:data-processor, cpt:consent, cpt:personal-data-breach, cpt:pseudonymization, cpt:anonymization, cpt:data-protection-impact-assessment, cpt:international-data-transfer, cpt:data-protection-by-design ;
+    skos:exactMatch <http://eurovoc.europa.eu/5181> ;
+    dct:source act:32016R0679 .
+
+cpt:personal-data a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Personal data"@en,
+                   "données personnelles"@fr,
+                   "persönliche Daten"@de ;
+    skos:definition "Any information relating to an identified or identifiable natural person."@en ;
+    skos:broader cpt:data-protection ;
+    skos:narrower cpt:special-categories-of-personal-data ;
+    skos:related cpt:data-subject ;
+    skos:exactMatch <http://eurovoc.europa.eu/5595> ;
+    dct:source act:32016R0679 .
+
+cpt:special-categories-of-personal-data a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Special categories of personal data"@en,
+                   "catégories particulières de données à caractère personnel"@fr,
+                   "besondere Kategorien personenbezogener Daten"@de ;
+    skos:definition "Sensitive personal data, such as health data or data revealing racial or ethnic origin, that is subject to stricter processing rules."@en ;
+    skos:broader cpt:personal-data ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:data-subject a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data subject"@en,
+                   "personne concernée"@fr,
+                   "betroffene Person"@de ;
+    skos:definition "An identified or identifiable natural person whose personal data is processed."@en ;
+    skos:broader cpt:data-protection ;
+    skos:narrower cpt:right-to-erasure, cpt:data-portability ;
+    skos:related cpt:personal-data ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:data-controller a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data controller"@en,
+                   "responsable du traitement"@fr,
+                   "Verantwortlicher"@de ;
+    skos:altLabel "Controller"@en ;
+    skos:definition "The party that decides why and how personal data is processed."@en ;
+    skos:broader cpt:data-protection ;
+    skos:related cpt:data-processor ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:data-processor a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data processor"@en,
+                   "sous-traitant"@fr,
+                   "Auftragsverarbeiter"@de ;
+    skos:altLabel "Processor"@en ;
+    skos:definition "A party that processes personal data on behalf of a controller."@en ;
+    skos:broader cpt:data-protection ;
+    skos:related cpt:data-controller ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:consent a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Consent"@en,
+                   "consentement"@fr,
+                   "Einwilligung"@de ;
+    skos:definition "A freely given, specific, informed and unambiguous indication of a person's wishes that they agree to the processing of their personal data."@en ;
+    skos:broader cpt:data-protection ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:right-to-erasure a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Right to erasure"@en,
+                   "droit à l'effacement"@fr,
+                   "Recht auf Löschung"@de ;
+    skos:altLabel "Right to be forgotten"@en ;
+    skos:definition "The right of a person to have their personal data deleted under certain conditions."@en ;
+    skos:broader cpt:data-subject ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:data-portability a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data portability"@en,
+                   "portabilité des données"@fr,
+                   "Datenübertragbarkeit"@de ;
+    skos:definition "The right of a person to receive their personal data in a structured, commonly used and machine-readable format and to pass it to another controller."@en ;
+    skos:broader cpt:data-subject ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:personal-data-breach a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Personal data breach"@en,
+                   "violation de données à caractère personnel"@fr,
+                   "Verletzung des Schutzes personenbezogener Daten"@de ;
+    skos:definition "A security incident that leads to the accidental or unlawful destruction, loss, alteration, disclosure of or access to personal data."@en ;
+    skos:broader cpt:data-protection ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:pseudonymization a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Pseudonymization"@en,
+                   "pseudonymisation"@fr,
+                   "Pseudonymisierung"@de ;
+    skos:altLabel "Pseudonymisation"@en ;
+    skos:definition "Processing personal data so that it can no longer be attributed to a person without additional information that is kept separately."@en ;
+    skos:broader cpt:data-protection ;
+    skos:related cpt:anonymization ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:anonymization a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Anonymization"@en,
+                   "anonymisation"@fr,
+                   "Anonymisierung"@de ;
+    skos:altLabel "Anonymisation"@en ;
+    skos:definition "Changing data irreversibly so that individuals can no longer be identified."@en ;
+    skos:broader cpt:data-protection ;
+    skos:related cpt:pseudonymization ;
+    skos:exactMatch <http://eurovoc.europa.eu/c_7bb1a021> .
+
+cpt:data-protection-impact-assessment a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data protection impact assessment"@en,
+                   "analyse d'impact relative à la protection des données"@fr,
+                   "Datenschutz-Folgenabschätzung"@de ;
+    skos:altLabel "DPIA"@en ;
+    skos:definition "An assessment of the risks that a processing operation poses to individuals, required before processing that is likely to be high risk."@en ;
+    skos:broader cpt:data-protection ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:international-data-transfer a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "International data transfer"@en,
+                   "transfert international de données"@fr,
+                   "internationale Datenübermittlung"@de ;
+    skos:altLabel "Transfer to third countries"@en ;
+    skos:definition "The transfer of personal data to a country outside the European Economic Area or to an international organization, which requires safeguards."@en ;
+    skos:broader cpt:data-protection ;
+    skos:broadMatch <http://eurovoc.europa.eu/4502> ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:data-protection-by-design a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data protection by design"@en,
+                   "protection des données dès la conception"@fr,
+                   "Datenschutz durch Technikgestaltung"@de ;
+    skos:altLabel "Privacy by design"@en ;
+    skos:definition "Building data protection measures into systems and processes from the start and by default."@en ;
+    skos:broader cpt:data-protection ;
+    skos:broadMatch <http://eurovoc.europa.eu/2828> ;
+    dct:source act:32016R0679 ;
+    lab:pendingReview "fr", "de" .
+
+# ----------------------------------------------------------------------
+# Data governance
+# ----------------------------------------------------------------------
+
+cpt:data-governance a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:topConceptOf sch:eu-data-governance ;
+    skos:prefLabel "Data governance"@en,
+                   "gouvernance des données"@fr,
+                   "Daten-Governance"@de ;
+    skos:definition "The roles, rules, processes and standards that make sure data is managed, shared and used in a trusted way."@en ;
+    skos:narrower cpt:data-sharing, cpt:connected-product, cpt:data-processing-service ;
+    skos:exactMatch <http://eurovoc.europa.eu/c_7e60137b> ;
+    dct:source act:32022R0868 .
+
+cpt:data-sharing a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data sharing"@en,
+                   "partage de données"@fr,
+                   "Datenaustausch"@de ;
+    skos:definition "Making data available to other parties for use under agreed conditions."@en ;
+    skos:broader cpt:data-governance ;
+    skos:narrower cpt:data-holder, cpt:data-user, cpt:data-intermediation-service, cpt:data-altruism, cpt:common-european-data-space ;
+    skos:exactMatch <http://eurovoc.europa.eu/c_eaccd9f4> ;
+    dct:source act:32022R0868 .
+
+cpt:data-holder a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data holder"@en,
+                   "détenteur de données"@fr,
+                   "Dateninhaber"@de ;
+    skos:definition "A party that has the right or the ability to grant access to, or to share, certain data."@en ;
+    skos:broader cpt:data-sharing ;
+    skos:related cpt:data-user ;
+    dct:source act:32022R0868 ;
+    dct:source act:32023R2854 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:data-user a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data user"@en,
+                   "utilisateur de données"@fr,
+                   "Datennutzer"@de ;
+    skos:definition "A party that has lawful access to data and may use it for commercial or non-commercial purposes."@en ;
+    skos:broader cpt:data-sharing ;
+    skos:related cpt:data-holder ;
+    dct:source act:32022R0868 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:data-intermediation-service a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data intermediation service"@en,
+                   "service d'intermédiation de données"@fr,
+                   "Datenvermittlungsdienst"@de ;
+    skos:definition "A service that sets up commercial relationships between data holders and data users by technical, legal or other means."@en ;
+    skos:broader cpt:data-sharing ;
+    dct:source act:32022R0868 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:data-altruism a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data altruism"@en,
+                   "altruisme en matière de données"@fr,
+                   "Datenaltruismus"@de ;
+    skos:definition "The voluntary sharing of data, based on consent or permission, for purposes of general interest and without seeking a reward."@en ;
+    skos:broader cpt:data-sharing ;
+    dct:source act:32022R0868 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:common-european-data-space a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Common European data space"@en,
+                   "espace européen commun de données"@fr,
+                   "gemeinsamer europäischer Datenraum"@de ;
+    skos:definition "A sector-specific or cross-sector framework for trusted data sharing in the EU, built on shared rules, standards and infrastructure."@en ;
+    skos:broader cpt:data-sharing ;
+    skos:related cpt:interoperability ;
+    lab:pendingReview "fr", "de" .
+
+cpt:connected-product a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Connected product"@en,
+                   "produit connecté"@fr,
+                   "vernetztes Produkt"@de ;
+    skos:definition "An item that obtains, generates or collects data about its use or surroundings and can communicate that data."@en ;
+    skos:broader cpt:data-governance ;
+    skos:closeMatch <http://eurovoc.europa.eu/c_b12a760a> ;
+    dct:source act:32023R2854 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:data-processing-service a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data processing service"@en,
+                   "service de traitement de données"@fr,
+                   "Datenverarbeitungsdienst"@de ;
+    skos:definition "A digital service, such as a cloud service, that gives on-demand network access to a shared pool of configurable computing resources."@en ;
+    skos:broader cpt:data-governance ;
+    skos:broadMatch <http://eurovoc.europa.eu/c_433922a6> ;
+    dct:source act:32023R2854 ;
+    lab:pendingReview "fr", "de" .
+
+# ----------------------------------------------------------------------
+# AI governance
+# ----------------------------------------------------------------------
+
+cpt:ai-governance a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:topConceptOf sch:eu-data-governance ;
+    skos:prefLabel "AI governance"@en,
+                   "gouvernance de l'intelligence artificielle"@fr,
+                   "KI-Governance"@de ;
+    skos:definition "The rules, processes and oversight that guide how AI systems are developed, placed on the market and used."@en ;
+    skos:narrower cpt:ai-system, cpt:general-purpose-ai-model, cpt:prohibited-ai-practice, cpt:risk-based-approach, cpt:ai-provider, cpt:ai-deployer, cpt:conformity-assessment, cpt:transparency-obligation, cpt:human-oversight, cpt:ai-regulatory-sandbox ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:ai-system a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "AI system"@en,
+                   "système d'IA"@fr,
+                   "KI-System"@de ;
+    skos:definition "A machine-based system that infers from its inputs how to generate outputs such as predictions, content, recommendations or decisions."@en ;
+    skos:broader cpt:ai-governance ;
+    skos:narrower cpt:high-risk-ai-system ;
+    skos:closeMatch <http://eurovoc.europa.eu/3030> ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:high-risk-ai-system a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "High-risk AI system"@en,
+                   "système d'IA à haut risque"@fr,
+                   "Hochrisiko-KI-System"@de ;
+    skos:definition "An AI system in a category that the AI Act subjects to strict requirements because of risks to health, safety or fundamental rights."@en ;
+    skos:broader cpt:ai-system ;
+    skos:related cpt:conformity-assessment, cpt:human-oversight ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:general-purpose-ai-model a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "General-purpose AI model"@en,
+                   "modèle d'IA à usage général"@fr,
+                   "KI-Modell mit allgemeinem Verwendungszweck"@de ;
+    skos:definition "An AI model trained on large amounts of data that can competently perform a wide range of tasks and be built into many systems."@en ;
+    skos:broader cpt:ai-governance ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:prohibited-ai-practice a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Prohibited AI practice"@en,
+                   "pratique d'IA interdite"@fr,
+                   "verbotene KI-Praktik"@de ;
+    skos:definition "A use of AI that the AI Act bans outright because it is seen as an unacceptable risk."@en ;
+    skos:broader cpt:ai-governance ;
+    skos:related cpt:risk-based-approach ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:risk-based-approach a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Risk-based approach"@en,
+                   "approche fondée sur les risques"@fr,
+                   "risikobasierter Ansatz"@de ;
+    skos:definition "A regulatory approach in which obligations grow with the level of risk."@en ;
+    skos:broader cpt:ai-governance ;
+    skos:related cpt:prohibited-ai-practice ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:ai-provider a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "AI provider"@en,
+                   "fournisseur de systèmes d'IA"@fr,
+                   "Anbieter von KI-Systemen"@de ;
+    skos:definition "A party that develops an AI system, or has it developed, and places it on the market or puts it into service under its own name."@en ;
+    skos:broader cpt:ai-governance ;
+    skos:related cpt:ai-deployer ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:ai-deployer a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "AI deployer"@en,
+                   "déployeur de systèmes d'IA"@fr,
+                   "Betreiber von KI-Systemen"@de ;
+    skos:definition "A party that uses an AI system under its own authority, except for personal non-professional use."@en ;
+    skos:broader cpt:ai-governance ;
+    skos:related cpt:ai-provider ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:conformity-assessment a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Conformity assessment"@en,
+                   "évaluation de la conformité"@fr,
+                   "Konformitätsbewertung"@de ;
+    skos:definition "A process that shows whether a product or system meets the requirements that apply to it."@en ;
+    skos:broader cpt:ai-governance ;
+    skos:related cpt:high-risk-ai-system ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:transparency-obligation a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Transparency obligation"@en,
+                   "obligation de transparence"@fr,
+                   "Transparenzpflicht"@de ;
+    skos:definition "A duty to inform people, for example that they are interacting with an AI system or viewing AI-generated content."@en ;
+    skos:broader cpt:ai-governance ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:human-oversight a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Human oversight"@en,
+                   "contrôle humain"@fr,
+                   "menschliche Aufsicht"@de ;
+    skos:definition "Measures that let people monitor, understand and, where needed, intervene in the operation of a high-risk AI system."@en ;
+    skos:broader cpt:ai-governance ;
+    skos:related cpt:high-risk-ai-system ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:ai-regulatory-sandbox a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "AI regulatory sandbox"@en,
+                   "bac à sable réglementaire de l'IA"@fr,
+                   "KI-Reallabor"@de ;
+    skos:definition "A controlled framework in which AI systems can be developed and tested under regulatory supervision before they are placed on the market."@en ;
+    skos:broader cpt:ai-governance ;
+    dct:source act:32024R1689 ;
+    lab:pendingReview "fr", "de" .
+
+# ----------------------------------------------------------------------
+# Open data and reuse
+# ----------------------------------------------------------------------
+
+cpt:open-data-and-reuse a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:topConceptOf sch:eu-data-governance ;
+    skos:prefLabel "Open data and reuse"@en,
+                   "données ouvertes et réutilisation"@fr,
+                   "offene Daten und Weiterverwendung"@de ;
+    skos:definition "Making public sector data available in open formats and under open conditions so that anyone can re-use it."@en ;
+    skos:narrower cpt:open-data, cpt:public-sector-information, cpt:re-use-of-documents, cpt:machine-readable-format, cpt:application-programming-interface, cpt:open-license, cpt:open-data-portal ;
+    dct:source act:32019L1024 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:open-data a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Open data"@en,
+                   "données ouvertes"@fr,
+                   "offene Daten"@de ;
+    skos:definition "Data that anyone can freely access, use and share, subject at most to conditions such as attribution."@en ;
+    skos:broader cpt:open-data-and-reuse ;
+    skos:narrower cpt:high-value-dataset ;
+    skos:related cpt:machine-readable-format, cpt:open-license ;
+    skos:exactMatch <http://eurovoc.europa.eu/c_5ea6e5c4> ;
+    dct:source act:32019L1024 .
+
+cpt:public-sector-information a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Public sector information"@en,
+                   "informations du secteur public"@fr,
+                   "Informationen des öffentlichen Sektors"@de ;
+    skos:altLabel "PSI"@en ;
+    skos:definition "Documents and data held by public sector bodies, often made available for re-use."@en ;
+    skos:broader cpt:open-data-and-reuse ;
+    skos:related cpt:re-use-of-documents ;
+    dct:source act:32019L1024 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:re-use-of-documents a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Re-use of documents"@en,
+                   "réutilisation de documents"@fr,
+                   "Weiterverwendung von Dokumenten"@de ;
+    skos:definition "Use of documents held by public sector bodies for commercial or non-commercial purposes other than their original public task."@en ;
+    skos:broader cpt:open-data-and-reuse ;
+    skos:related cpt:public-sector-information ;
+    dct:source act:32019L1024 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:high-value-dataset a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "High-value dataset"@en,
+                   "série de données de forte valeur"@fr,
+                   "hochwertiger Datensatz"@de ;
+    skos:definition "A dataset whose re-use brings important benefits for society, the environment and the economy, and for which special availability rules apply."@en ;
+    skos:broader cpt:open-data ;
+    skos:related cpt:application-programming-interface ;
+    dct:source act:32019L1024 ;
+    dct:source act:32023R0138 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:machine-readable-format a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Machine-readable format"@en,
+                   "format lisible par machine"@fr,
+                   "maschinenlesbares Format"@de ;
+    skos:definition "A file format structured so that software can easily identify, recognize and extract specific data from it."@en ;
+    skos:broader cpt:open-data-and-reuse ;
+    skos:related cpt:open-data ;
+    dct:source act:32019L1024 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:application-programming-interface a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Application programming interface"@en,
+                   "interface de programmation d'applications"@fr,
+                   "Anwendungsprogrammierschnittstelle"@de ;
+    skos:altLabel "API"@en ;
+    skos:definition "A set of functions and rules that lets software request data or services from another system."@en ;
+    skos:broader cpt:open-data-and-reuse ;
+    skos:related cpt:high-value-dataset ;
+    dct:source act:32019L1024 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:open-license a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Open license"@en,
+                   "licence ouverte"@fr,
+                   "offene Lizenz"@de ;
+    skos:altLabel "Open licence"@en ;
+    skos:definition "A license that allows data to be freely re-used, with at most minimal conditions such as attribution."@en ;
+    skos:broader cpt:open-data-and-reuse ;
+    skos:related cpt:open-data ;
+    dct:source act:32019L1024 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:open-data-portal a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Open data portal"@en,
+                   "portail de données ouvertes"@fr,
+                   "Portal für offene Daten"@de ;
+    skos:definition "A web site where public bodies publish and describe datasets so that people can find and download them."@en ;
+    skos:broader cpt:open-data-and-reuse ;
+    skos:related cpt:data-catalog ;
+    lab:pendingReview "fr", "de" .
+
+# ----------------------------------------------------------------------
+# Digital resilience
+# ----------------------------------------------------------------------
+
+cpt:digital-resilience a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:topConceptOf sch:eu-data-governance ;
+    skos:prefLabel "Digital resilience"@en,
+                   "résilience numérique"@fr,
+                   "digitale Resilienz"@de ;
+    skos:definition "The ability of organizations and systems to withstand, respond to and recover from disruptions of digital technology."@en ;
+    skos:narrower cpt:cybersecurity, cpt:ict-risk-management, cpt:ict-incident, cpt:digital-operational-resilience-testing, cpt:essential-entity, cpt:important-entity ;
+    dct:source act:32022R2554 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:cybersecurity a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Cybersecurity"@en,
+                   "cybersécurité"@fr,
+                   "Cybersicherheit"@de ;
+    skos:definition "The activities needed to protect network and information systems, their users and other people from cyber threats."@en ;
+    skos:broader cpt:digital-resilience ;
+    skos:narrower cpt:product-with-digital-elements ;
+    skos:related cpt:ict-risk-management ;
+    skos:closeMatch <http://eurovoc.europa.eu/c_04ae3ba8> ;
+    dct:source act:32022L2555 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:ict-risk-management a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "ICT risk management"@en,
+                   "gestion du risque lié aux TIC"@fr,
+                   "IKT-Risikomanagement"@de ;
+    skos:definition "The frameworks, policies and controls used to identify, assess and reduce risks from information and communication technology."@en ;
+    skos:broader cpt:digital-resilience ;
+    skos:narrower cpt:ict-third-party-risk ;
+    skos:related cpt:cybersecurity, cpt:digital-operational-resilience-testing ;
+    skos:broadMatch <http://eurovoc.europa.eu/c_406ad4cc> ;
+    dct:source act:32022R2554 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:ict-third-party-risk a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "ICT third-party risk"@en,
+                   "risque lié aux prestataires tiers de services TIC"@fr,
+                   "IKT-Drittparteienrisiko"@de ;
+    skos:definition "The risk that arises from relying on external providers of ICT services, such as cloud providers."@en ;
+    skos:broader cpt:ict-risk-management ;
+    dct:source act:32022R2554 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:ict-incident a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "ICT incident"@en,
+                   "incident lié aux TIC"@fr,
+                   "IKT-bezogener Vorfall"@de ;
+    skos:definition "A single event, or a series of linked events, not planned by the organization, that harms the security of network and information systems."@en ;
+    skos:broader cpt:digital-resilience ;
+    skos:narrower cpt:incident-reporting ;
+    dct:source act:32022R2554 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:incident-reporting a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Incident reporting"@en,
+                   "notification d'incident"@fr,
+                   "Meldung von Vorfällen"@de ;
+    skos:definition "The duty to notify competent authorities, and sometimes affected parties, of significant incidents within set deadlines."@en ;
+    skos:broader cpt:ict-incident ;
+    dct:source act:32022R2554 ;
+    dct:source act:32022L2555 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:digital-operational-resilience-testing a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Digital operational resilience testing"@en,
+                   "tests de résilience opérationnelle numérique"@fr,
+                   "Testen der digitalen operationalen Resilienz"@de ;
+    skos:definition "Tests, such as vulnerability scans and threat-led penetration tests, that check whether ICT systems can withstand disruption."@en ;
+    skos:broader cpt:digital-resilience ;
+    skos:related cpt:ict-risk-management ;
+    dct:source act:32022R2554 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:essential-entity a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Essential entity"@en,
+                   "entité essentielle"@fr,
+                   "wesentliche Einrichtung"@de ;
+    skos:definition "A type of organization in sectors of high criticality that is subject to the full supervisory regime of the NIS2 Directive."@en ;
+    skos:broader cpt:digital-resilience ;
+    skos:related cpt:important-entity ;
+    dct:source act:32022L2555 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:important-entity a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Important entity"@en,
+                   "entité importante"@fr,
+                   "wichtige Einrichtung"@de ;
+    skos:definition "A type of organization in listed sectors that is subject to a lighter supervisory regime than essential entities under the NIS2 Directive."@en ;
+    skos:broader cpt:digital-resilience ;
+    skos:related cpt:essential-entity ;
+    dct:source act:32022L2555 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:product-with-digital-elements a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Product with digital elements"@en,
+                   "produit comportant des éléments numériques"@fr,
+                   "Produkt mit digitalen Elementen"@de ;
+    skos:definition "A software or hardware product, together with its remote data processing solutions, that is covered by the cybersecurity requirements of the Cyber Resilience Act."@en ;
+    skos:broader cpt:cybersecurity ;
+    dct:source act:32024R2847 ;
+    lab:pendingReview "fr", "de" .
+
+# ----------------------------------------------------------------------
+# Data quality and metadata
+# ----------------------------------------------------------------------
+
+cpt:data-quality-and-metadata a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:topConceptOf sch:eu-data-governance ;
+    skos:prefLabel "Data quality and metadata"@en,
+                   "qualité des données et métadonnées"@fr,
+                   "Datenqualität und Metadaten"@de ;
+    skos:definition "Practices and standards that keep data accurate, well described and easy to find, understand and combine."@en ;
+    skos:narrower cpt:data-quality, cpt:metadata, cpt:controlled-vocabulary, cpt:ontology, cpt:linked-data, cpt:persistent-identifier, cpt:interoperability, cpt:data-standard, cpt:reference-data, cpt:fair-principles ;
+    lab:pendingReview "fr", "de" .
+
+cpt:data-quality a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data quality"@en,
+                   "qualité des données"@fr,
+                   "Datenqualität"@de ;
+    skos:definition "The degree to which data is accurate, complete, consistent, timely and fit for its intended use."@en ;
+    skos:broader cpt:data-quality-and-metadata ;
+    skos:exactMatch <http://eurovoc.europa.eu/66901> .
+
+cpt:metadata a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Metadata"@en,
+                   "métadonnée"@fr,
+                   "Metadaten"@de ;
+    skos:definition "Data that describes other data, such as its origin, meaning, format and conditions of use."@en ;
+    skos:broader cpt:data-quality-and-metadata ;
+    skos:narrower cpt:data-catalog ;
+    skos:related cpt:fair-principles ;
+    skos:exactMatch <http://eurovoc.europa.eu/c_40f54e0c> .
+
+cpt:data-catalog a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data catalog"@en,
+                   "catalogue de données"@fr,
+                   "Datenkatalog"@de ;
+    skos:definition "A curated collection of metadata descriptions of datasets that helps people find and understand data."@en ;
+    skos:broader cpt:metadata ;
+    skos:related cpt:open-data-portal ;
+    dct:source <https://www.w3.org/TR/vocab-dcat-3/> ;
+    lab:pendingReview "fr", "de" .
+
+cpt:controlled-vocabulary a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Controlled vocabulary"@en,
+                   "vocabulaire contrôlé"@fr,
+                   "kontrolliertes Vokabular"@de ;
+    skos:definition "An agreed list of terms used to describe things in a consistent way."@en ;
+    skos:broader cpt:data-quality-and-metadata ;
+    skos:narrower cpt:thesaurus ;
+    lab:pendingReview "fr", "de" .
+
+cpt:thesaurus a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Thesaurus"@en,
+                   "thésaurus"@fr,
+                   "Thesaurus"@de ;
+    skos:definition "A controlled vocabulary whose terms are linked by relationships such as broader, narrower and related."@en ;
+    skos:broader cpt:controlled-vocabulary ;
+    skos:related cpt:ontology ;
+    skos:exactMatch <http://eurovoc.europa.eu/4138> .
+
+cpt:ontology a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Ontology"@en,
+                   "ontologie"@fr,
+                   "Ontologie"@de ;
+    skos:definition "A formal, machine-readable model of the classes, properties and relationships in a domain."@en ;
+    skos:broader cpt:data-quality-and-metadata ;
+    skos:related cpt:thesaurus ;
+    skos:exactMatch <http://eurovoc.europa.eu/c_782eaeb3> .
+
+cpt:linked-data a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Linked data"@en,
+                   "données liées"@fr,
+                   "verknüpfte Daten"@de ;
+    skos:altLabel "Linked Open Data"@en ;
+    skos:definition "A method of publishing structured data on the web with URIs and RDF so that datasets can be linked to each other."@en ;
+    skos:broader cpt:data-quality-and-metadata ;
+    skos:related cpt:persistent-identifier ;
+    skos:closeMatch <http://eurovoc.europa.eu/c_a17a2156> ;
+    dct:source <https://www.w3.org/DesignIssues/LinkedData.html> ;
+    lab:pendingReview "fr", "de" .
+
+cpt:persistent-identifier a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Persistent identifier"@en,
+                   "identifiant pérenne"@fr,
+                   "persistenter Identifikator"@de ;
+    skos:altLabel "PID"@en ;
+    skos:definition "A long-lasting reference, such as a URI, that identifies a resource and stays stable over time."@en ;
+    skos:broader cpt:data-quality-and-metadata ;
+    skos:related cpt:linked-data ;
+    lab:pendingReview "fr", "de" .
+
+cpt:interoperability a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Interoperability"@en,
+                   "interopérabilité"@fr,
+                   "Interoperabilität"@de ;
+    skos:definition "The ability of different organizations and systems to exchange data and to use the data they receive."@en ;
+    skos:broader cpt:data-quality-and-metadata ;
+    skos:related cpt:common-european-data-space, cpt:data-standard ;
+    dct:source act:32024R0903 ;
+    lab:pendingReview "fr", "de" .
+
+cpt:data-standard a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Data standard"@en,
+                   "norme de données"@fr,
+                   "Datenstandard"@de ;
+    skos:definition "An agreed specification for how data is structured, formatted or exchanged."@en ;
+    skos:broader cpt:data-quality-and-metadata ;
+    skos:related cpt:interoperability, cpt:reference-data ;
+    skos:broadMatch <http://eurovoc.europa.eu/2077> ;
+    lab:pendingReview "fr", "de" .
+
+cpt:reference-data a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "Reference data"@en,
+                   "données de référence"@fr,
+                   "Referenzdaten"@de ;
+    skos:definition "Shared lists of values, such as country codes or code lists, that are used to classify other data."@en ;
+    skos:broader cpt:data-quality-and-metadata ;
+    skos:related cpt:data-standard ;
+    lab:pendingReview "fr", "de" .
+
+cpt:fair-principles a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "FAIR principles"@en,
+                   "principes FAIR"@fr,
+                   "FAIR-Prinzipien"@de ;
+    skos:definition "Guiding principles for making data findable, accessible, interoperable and reusable."@en ;
+    skos:broader cpt:data-quality-and-metadata ;
+    skos:related cpt:metadata ;
+    dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+    lab:pendingReview "fr", "de" .
