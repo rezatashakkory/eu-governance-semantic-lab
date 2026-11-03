@@ -1,0 +1,23 @@
+# title: Overview of the legal acts
+# level: easy
+# purpose: List all acts with short name, type, document date and CELEX number.
+# expected: 20 rows, oldest first.
+# concepts: rdf:type as a variable, FILTER with IN, ordering by xsd:date
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/>
+PREFIX cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/>
+PREFIX act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/>
+PREFIX sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/>
+
+SELECT ?act ?shortName ?type ?date ?celex
+WHERE {
+  ?act a ?type ;
+       dct:alternative ?shortName ;
+       dct:date ?date ;
+       lab:hasCELEX ?celex .
+  # Each act has one type that we care about. This ignores other types.
+  FILTER (?type IN (lab:Regulation, lab:Directive, lab:ImplementingRegulation))
+}
+ORDER BY ?date ?celex

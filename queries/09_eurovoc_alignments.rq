@@ -1,0 +1,25 @@
+# title: Alignments to EuroVoc
+# level: intermediate
+# purpose: List every link from our concepts to EuroVoc, with the type of match.
+# expected: 19 rows: 4 closeMatch, 5 broadMatch and 10 exactMatch.
+# concepts: VALUES, BIND, REPLACE, STRSTARTS
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/>
+PREFIX cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/>
+PREFIX act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/>
+PREFIX sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/>
+
+SELECT ?concept ?label ?matchType ?eurovoc
+WHERE {
+  # Three kinds of mapping link: same meaning, similar meaning, and ours is narrower.
+  VALUES ?link { skos:exactMatch skos:closeMatch skos:broadMatch }
+  ?concept ?link ?eurovoc ;
+           skos:prefLabel ?label .
+  FILTER (lang(?label) = "en")
+  FILTER (STRSTARTS(STR(?eurovoc), "http://eurovoc.europa.eu/"))
+  # Cut the namespace off the property to get just exactMatch, closeMatch or broadMatch.
+  BIND (REPLACE(STR(?link), "^.*#", "") AS ?matchType)
+}
+ORDER BY ?matchType ?label

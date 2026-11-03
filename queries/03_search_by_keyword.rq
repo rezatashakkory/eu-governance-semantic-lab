@@ -1,0 +1,24 @@
+# title: Search concepts by keyword
+# level: easy
+# purpose: Find concepts whose English label or alternative label contains incident or breach.
+# expected: 3 rows: ICT incident, Incident reporting, Personal data breach.
+# concepts: FILTER with regex, case-insensitive flag, OPTIONAL, DISTINCT
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/>
+PREFIX cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/>
+PREFIX act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/>
+PREFIX sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/>
+
+SELECT DISTINCT ?concept ?label
+WHERE {
+  ?concept a skos:Concept ;
+           skos:prefLabel ?label .
+  FILTER (lang(?label) = "en")
+  OPTIONAL { ?concept skos:altLabel ?alt . FILTER (lang(?alt) = "en") }
+  # The "i" flag makes the match case-insensitive. regex on an unbound ?alt is an error,
+  # which counts as false, so the label test still works on its own.
+  FILTER (regex(?label, "incident|breach", "i") || regex(?alt, "incident|breach", "i"))
+}
+ORDER BY ?label

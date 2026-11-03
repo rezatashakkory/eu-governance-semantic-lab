@@ -1,0 +1,22 @@
+# title: Number of acts per type
+# level: intermediate
+# purpose: Count the acts by their class.
+# expected: 3 rows: Regulation 12, Directive 7, ImplementingRegulation 1. Without reasoning, the implementing regulation is not counted as a regulation.
+# concepts: GROUP BY, COUNT, STRAFTER
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/>
+PREFIX cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/>
+PREFIX act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/>
+PREFIX sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/>
+
+SELECT ?type (COUNT(?act) AS ?acts)
+WHERE {
+  ?act a ?class .
+  FILTER (?class IN (lab:Regulation, lab:Directive, lab:ImplementingRegulation))
+  # STRAFTER keeps the part of the URI after /def/.
+  BIND (STRAFTER(STR(?class), "/def/") AS ?type)
+}
+GROUP BY ?type
+ORDER BY DESC(?acts)

@@ -1,0 +1,22 @@
+# title: Number of concepts per top concept
+# level: intermediate
+# purpose: Count how many concepts sit below each of the six top concepts.
+# expected: 6 rows. Counts are 14, 12, 11, 9, 8 and 8, which together with the 6 top concepts make 68.
+# concepts: GROUP BY, COUNT, DISTINCT, property path with +
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/>
+PREFIX cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/>
+PREFIX act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/>
+PREFIX sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/>
+
+SELECT ?topLabel (COUNT(DISTINCT ?concept) AS ?descendants)
+WHERE {
+  sch:eu-data-governance skos:hasTopConcept ?top .
+  ?top skos:prefLabel ?topLabel .
+  FILTER (lang(?topLabel) = "en")
+  ?concept skos:broader+ ?top .
+}
+GROUP BY ?topLabel
+ORDER BY DESC(?descendants) ?topLabel

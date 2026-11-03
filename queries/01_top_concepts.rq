@@ -1,0 +1,22 @@
+# title: Top concepts of the thesaurus
+# level: easy
+# purpose: List the six top concepts, the entry points of the hierarchy, with their English labels.
+# expected: 6 rows, one per top concept, sorted by label.
+# concepts: SELECT, triple pattern, FILTER on language, ORDER BY
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/>
+PREFIX cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/>
+PREFIX act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/>
+PREFIX sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/>
+
+SELECT ?concept ?label
+WHERE {
+  # skos:hasTopConcept links the scheme to its entry points.
+  sch:eu-data-governance skos:hasTopConcept ?concept .
+  ?concept skos:prefLabel ?label .
+  # Keep only the English label. Without this, each concept appears three times.
+  FILTER (lang(?label) = "en")
+}
+ORDER BY ?label

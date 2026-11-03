@@ -1,0 +1,24 @@
+# title: CONSTRUCT a simple act and topic graph
+# level: advanced
+# purpose: Build a new, smaller graph that links each act to its topics with English labels.
+# expected: A graph, not a table. Every act appears with at least one dct:subject triple.
+# concepts: CONSTRUCT, alternative property path, building new triples
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/>
+PREFIX cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/>
+PREFIX act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/>
+PREFIX sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/>
+
+CONSTRUCT {
+  ?act dct:subject ?topic ;
+       rdfs:label ?shortName .
+  ?topic rdfs:label ?topicLabel .
+}
+WHERE {
+  ?act (lab:hasTopic|lab:regulates) ?topic ;
+       dct:alternative ?shortName .
+  ?topic skos:prefLabel ?topicLabel .
+  FILTER (lang(?topicLabel) = "en")
+}

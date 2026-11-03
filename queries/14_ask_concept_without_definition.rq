@@ -1,0 +1,17 @@
+# title: ASK, is any concept missing a definition
+# level: intermediate
+# purpose: A yes or no data quality check. The answer should be false.
+# expected: false. A true answer means at least one concept has no skos:definition.
+# concepts: ASK, FILTER NOT EXISTS
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/>
+PREFIX cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/>
+PREFIX act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/>
+PREFIX sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/>
+
+ASK {
+  ?concept a skos:Concept .
+  FILTER NOT EXISTS { ?concept skos:definition ?definition }
+}

@@ -1,0 +1,33 @@
+# title: Amends, repeals and is based on
+# level: intermediate
+# purpose: List how acts relate to each other, with CELEX numbers on both sides.
+# expected: 6 rows: 3 amends, 2 repeals and 1 is based on.
+# concepts: UNION, BIND with constants
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/>
+PREFIX cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/>
+PREFIX act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/>
+PREFIX sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/>
+
+SELECT ?fromCelex ?relation ?toCelex
+WHERE {
+  {
+    ?from lab:amends ?to .
+    BIND ("amends" AS ?relation)
+  }
+  UNION
+  {
+    ?from lab:repeals ?to .
+    BIND ("repeals" AS ?relation)
+  }
+  UNION
+  {
+    ?from lab:isBasedOn ?to .
+    BIND ("is based on" AS ?relation)
+  }
+  ?from lab:hasCELEX ?fromCelex .
+  ?to lab:hasCELEX ?toCelex .
+}
+ORDER BY ?relation ?fromCelex
