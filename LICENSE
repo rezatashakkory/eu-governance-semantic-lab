@@ -1,3 +1,18 @@
+This repository has two licenses.
+
+1. SOURCE CODE (src/, app/, tests/*.py, Makefile, workflow files): MIT License, below.
+2. DATA AND DOCUMENTATION (data/, queries/, docs/, and the Markdown files in the root):
+   Creative Commons Attribution 4.0 International (CC BY 4.0).
+   Summary: https://creativecommons.org/licenses/by/4.0/
+   Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+   Attribution: "EU Data Governance Semantic Lab, Reza Tashakkori, 2026".
+
+Third-party material keeps its own terms. In particular, the French and German labels
+that were taken from EuroVoc and the EuroVoc identifiers are not covered by the CC BY 4.0
+license of this repository. See docs/sources_and_licenses.md for the sources and notes.
+
+----------------------------------------------------------------------------------------
+
 MIT License
 
 Copyright (c) 2026 Reza Tashakkori
@@ -19,6 +34,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-This license covers the source code. The data in the data/ folder is
-licensed separately under CC BY 4.0 (added in Phase 3, with source notes).
