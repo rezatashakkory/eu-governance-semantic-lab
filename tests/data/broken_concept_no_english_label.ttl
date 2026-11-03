@@ -1,0 +1,17 @@
+@prefix cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/> .
+@prefix sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/> .
+@prefix act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/> .
+@prefix ds:   <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/dataset/> .
+@prefix agent: <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/> .
+@prefix lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Broken on purpose: the concept has French and German labels but no English one.
+
+cpt:broken-test a skos:Concept ;
+    skos:inScheme sch:eu-data-governance ;
+    skos:prefLabel "concept de test"@fr, "Testkonzept"@de ;
+    skos:definition "A concept used only to test validation."@en .

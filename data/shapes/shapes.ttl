@@ -1,0 +1,261 @@
+# SHACL shapes for the EU Data Governance Semantic Lab, source of truth.
+# A shape describes what valid data looks like. Validation checks the data against it.
+# Severity: sh:Violation (default) fails validation, sh:Warning is reported but does not fail.
+
+@prefix shp:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/shapes/> .
+@prefix lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Prefixes that the SPARQL constraints below can use.
+<https://rezatashakkory.github.io/eu-governance-semantic-lab/shapes/> a owl:Ontology ;
+    sh:declare
+        [ sh:prefix "skos" ; sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ] ,
+        [ sh:prefix "lab" ; sh:namespace "https://rezatashakkory.github.io/eu-governance-semantic-lab/def/"^^xsd:anyURI ] ,
+        [ sh:prefix "rdfs" ; sh:namespace "http://www.w3.org/2000/01/rdf-schema#"^^xsd:anyURI ] .
+
+# ----------------------------------------------------------------------
+# Thesaurus
+# ----------------------------------------------------------------------
+
+shp:ConceptSchemeShape a sh:NodeShape ;
+    sh:targetClass skos:ConceptScheme ;
+    sh:property [
+        sh:path dct:title ;
+        sh:minCount 1 ;
+        sh:message "A concept scheme needs a title."@en
+    ] ;
+    sh:property [
+        sh:path skos:hasTopConcept ;
+        sh:minCount 1 ;
+        sh:class skos:Concept ;
+        sh:message "A concept scheme needs at least one top concept."@en
+    ] .
+
+shp:ConceptShape a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+    sh:property [
+        sh:path skos:inScheme ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class skos:ConceptScheme ;
+        sh:message "A concept must belong to exactly one concept scheme."@en
+    ] ;
+    # Required: an English preferred label.
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:message "A concept needs an English preferred label (skos:prefLabel with language tag en)."@en
+    ] ;
+    # Required: at most one preferred label per language.
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:uniqueLang true ;
+        sh:message "A concept may have only one preferred label per language."@en
+    ] ;
+    # Required: a definition.
+    sh:property [
+        sh:path skos:definition ;
+        sh:minCount 1 ;
+        sh:message "A concept needs a definition (skos:definition)."@en
+    ] ;
+    # Recommended: French and German preferred labels. Warning only.
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:severity sh:Warning ;
+        sh:qualifiedValueShape [ sh:languageIn ( "fr" ) ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:message "The concept has no French preferred label."@en
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:severity sh:Warning ;
+        sh:qualifiedValueShape [ sh:languageIn ( "de" ) ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:message "The concept has no German preferred label."@en
+    ] ;
+    sh:property [
+        sh:path skos:broader ;
+        sh:class skos:Concept ;
+        sh:message "skos:broader must point to another concept."@en
+    ] ;
+    sh:property [
+        sh:path skos:related ;
+        sh:class skos:Concept ;
+        sh:message "skos:related must point to another concept."@en
+    ] ;
+    # Required: a preferred label is used by only one concept per language.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:prefixes <https://rezatashakkory.github.io/eu-governance-semantic-lab/shapes/> ;
+        sh:message "The preferred label {?value} is already used by another concept in the same language."@en ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this skos:prefLabel ?value .
+                ?other skos:prefLabel ?value .
+                FILTER (?other != $this)
+            }
+        """
+    ] ;
+    # Required: skos:narrower is always mirrored by skos:broader.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:prefixes <https://rezatashakkory.github.io/eu-governance-semantic-lab/shapes/> ;
+        sh:message "This concept lists {?child} as narrower, but {?child} does not list it as broader."@en ;
+        sh:select """
+            SELECT $this ?child WHERE {
+                $this skos:narrower ?child .
+                FILTER NOT EXISTS { ?child skos:broader $this }
+            }
+        """
+    ] .
+
+# ----------------------------------------------------------------------
+# Legal acts
+# ----------------------------------------------------------------------
+
+shp:LegalActShape a sh:NodeShape ;
+    sh:targetClass lab:LegalAct ;
+    sh:property [
+        sh:path lab:hasCELEX ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:pattern "^3[0-9]{4}[A-Z][0-9]{4}$" ;
+        sh:message "A legal act needs exactly one CELEX number such as 32016R0679: sector digit 3, a four digit year, a type letter, and a four digit number."@en
+    ] ;
+    sh:property [
+        sh:path dct:title ;
+        sh:minCount 1 ;
+        sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:message "A legal act needs an English title."@en
+    ] ;
+    sh:property [
+        sh:path dct:date ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+        sh:message "A legal act needs exactly one document date of type xsd:date."@en
+    ] ;
+    sh:property [
+        sh:path lab:hasELI ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^http://data\\.europa\\.eu/eli/" ;
+        sh:message "A legal act needs an ELI that is an IRI starting with http://data.europa.eu/eli/."@en
+    ] ;
+    sh:property [
+        sh:path lab:regulates ;
+        sh:minCount 1 ;
+        sh:class skos:Concept ;
+        sh:message "A legal act needs at least one regulated subject that is a thesaurus concept."@en
+    ] ;
+    sh:property [
+        sh:path lab:hasTopic ;
+        sh:class skos:Concept ;
+        sh:message "A topic of a legal act must be a thesaurus concept."@en
+    ] ;
+    sh:property [ sh:path lab:amends ; sh:class lab:LegalAct ; sh:message "lab:amends must point to a legal act."@en ] ;
+    sh:property [ sh:path lab:repeals ; sh:class lab:LegalAct ; sh:message "lab:repeals must point to a legal act."@en ] ;
+    sh:property [ sh:path lab:isBasedOn ; sh:class lab:LegalAct ; sh:message "lab:isBasedOn must point to a legal act."@en ] ;
+    # The type letter in the CELEX number must match the class: R is a regulation.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:prefixes <https://rezatashakkory.github.io/eu-governance-semantic-lab/shapes/> ;
+        sh:message "The CELEX number {?celex} has the type letter R, so the act must be a regulation."@en ;
+        sh:select """
+            SELECT $this ?celex WHERE {
+                $this lab:hasCELEX ?celex .
+                FILTER regex(?celex, "^[0-9]{5}R")
+                FILTER NOT EXISTS { $this a/rdfs:subClassOf* lab:Regulation }
+            }
+        """
+    ] ;
+    # L is a directive.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:prefixes <https://rezatashakkory.github.io/eu-governance-semantic-lab/shapes/> ;
+        sh:message "The CELEX number {?celex} has the type letter L, so the act must be a directive."@en ;
+        sh:select """
+            SELECT $this ?celex WHERE {
+                $this lab:hasCELEX ?celex .
+                FILTER regex(?celex, "^[0-9]{5}L")
+                FILTER NOT EXISTS { $this a/rdfs:subClassOf* lab:Directive }
+            }
+        """
+    ] .
+
+# ----------------------------------------------------------------------
+# DCAT metadata
+# ----------------------------------------------------------------------
+
+shp:CatalogShape a sh:NodeShape ;
+    sh:targetClass dcat:Catalog ;
+    sh:property [ sh:path dct:title ; sh:minCount 1 ; sh:message "A catalog needs a title."@en ] ;
+    sh:property [ sh:path dct:description ; sh:minCount 1 ; sh:message "A catalog needs a description."@en ] ;
+    sh:property [
+        sh:path dct:publisher ;
+        sh:minCount 1 ;
+        sh:class foaf:Agent ;
+        sh:message "A catalog needs a publisher that is a foaf:Agent."@en
+    ] ;
+    sh:property [
+        sh:path dcat:dataset ;
+        sh:minCount 1 ;
+        sh:class dcat:Dataset ;
+        sh:message "A catalog needs at least one dataset."@en
+    ] .
+
+shp:DatasetShape a sh:NodeShape ;
+    sh:targetClass dcat:Dataset ;
+    sh:property [ sh:path dct:title ; sh:minCount 1 ; sh:message "A dataset needs a title."@en ] ;
+    sh:property [ sh:path dct:description ; sh:minCount 1 ; sh:message "A dataset needs a description."@en ] ;
+    sh:property [
+        sh:path dct:publisher ;
+        sh:minCount 1 ;
+        sh:class foaf:Agent ;
+        sh:message "A dataset must have a publisher that is a foaf:Agent."@en
+    ] ;
+    sh:property [
+        sh:path dct:license ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "A dataset must have a license (dct:license) given as an IRI."@en
+    ] ;
+    sh:property [ sh:path dct:language ; sh:minCount 1 ; sh:message "A dataset needs at least one language."@en ] ;
+    sh:property [ sh:path dcat:theme ; sh:minCount 1 ; sh:message "A dataset needs at least one theme."@en ] ;
+    sh:property [
+        sh:path dct:issued ;
+        sh:datatype xsd:date ;
+        sh:message "The issued date must be of type xsd:date."@en
+    ] ;
+    sh:property [
+        sh:path dcat:distribution ;
+        sh:minCount 1 ;
+        sh:class dcat:Distribution ;
+        sh:message "A dataset needs at least one distribution."@en
+    ] .
+
+shp:DistributionShape a sh:NodeShape ;
+    sh:targetClass dcat:Distribution ;
+    sh:property [
+        sh:path dcat:accessURL ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "A distribution needs an access URL."@en
+    ] ;
+    sh:property [ sh:path dct:format ; sh:minCount 1 ; sh:message "A distribution needs a format."@en ] ;
+    sh:property [ sh:path dct:license ; sh:minCount 1 ; sh:message "A distribution needs a license."@en ] .
+
+shp:AgentShape a sh:NodeShape ;
+    sh:targetClass foaf:Agent ;
+    sh:property [ sh:path foaf:name ; sh:minCount 1 ; sh:message "An agent needs a name."@en ] .

@@ -1,0 +1,18 @@
+@prefix cpt:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/> .
+@prefix sch:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/> .
+@prefix act:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/> .
+@prefix ds:   <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/dataset/> .
+@prefix agent: <https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/> .
+@prefix lab:  <https://rezatashakkory.github.io/eu-governance-semantic-lab/def/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Broken on purpose: the dataset has no license and no publisher.
+
+ds:broken-test a dcat:Dataset ;
+    dct:title "A test dataset"@en ;
+    dct:description "A dataset used only to test validation."@en ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TECH> .
