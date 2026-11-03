@@ -15,26 +15,11 @@
   },
   "@graph": [
     {
-      "@id": "lab:LegalAct",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "An act adopted by the EU institutions, such as a regulation or a directive."
-      },
-      "rdfs:isDefinedBy": {
-        "@id": "lab:"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Legal act"
-      }
-    },
-    {
-      "@id": "lab:repealedBy",
+      "@id": "lab:amendedBy",
       "@type": "owl:ObjectProperty",
       "rdfs:comment": {
         "@language": "en",
-        "@value": "The subject act is replaced by the object act."
+        "@value": "The subject act has its text changed by the object act."
       },
       "rdfs:domain": {
         "@id": "lab:LegalAct"
@@ -44,10 +29,46 @@
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "repealed by"
+        "@value": "amended by"
       },
       "rdfs:range": {
         "@id": "lab:LegalAct"
+      }
+    },
+    {
+      "@id": "lab:Regulation",
+      "@type": "owl:Class",
+      "owl:disjointWith": {
+        "@id": "lab:Directive"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A legal act that applies directly in all EU Member States."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "lab:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Regulation"
+      },
+      "rdfs:subClassOf": {
+        "@id": "lab:LegalAct"
+      }
+    },
+    {
+      "@id": "lab:Authority",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A board or body that has tasks under a legal act."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "lab:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Authority"
       }
     },
     {
@@ -78,6 +99,39 @@
       }
     },
     {
+      "@id": "lab:pendingReview",
+      "@type": "owl:AnnotationProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A language code (for example fr or de) whose labels on this concept have not yet been checked by a native speaker."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "lab:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "pending review"
+      }
+    },
+    {
+      "@id": "lab:Directive",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A legal act that sets goals which Member States must reach by passing their own national laws."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "lab:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Directive"
+      },
+      "rdfs:subClassOf": {
+        "@id": "lab:LegalAct"
+      }
+    },
+    {
       "@id": "lab:providesFor",
       "@type": "owl:ObjectProperty",
       "rdfs:comment": {
@@ -99,18 +153,112 @@
       }
     },
     {
-      "@id": "lab:Obligation",
-      "@type": "owl:Class",
+      "@id": "lab:hasCELEX",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
       "rdfs:comment": {
         "@language": "en",
-        "@value": "A duty that a legal act places on a party."
+        "@value": "The CELEX number of the act, the identifier used by EUR-Lex. An act has exactly one."
+      },
+      "rdfs:domain": {
+        "@id": "lab:LegalAct"
       },
       "rdfs:isDefinedBy": {
         "@id": "lab:"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Obligation"
+        "@value": "has CELEX number"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "lab:regulates",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Links an act to the main subject matter it regulates. Every regulated subject is also a topic of the act."
+      },
+      "rdfs:domain": {
+        "@id": "lab:LegalAct"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "lab:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "regulates"
+      },
+      "rdfs:range": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "lab:hasTopic"
+      }
+    },
+    {
+      "@id": "_:na68464cb191e417b9f914c704d23e4edb1",
+      "@type": "owl:AllDisjointClasses",
+      "owl:members": {
+        "@list": [
+          {
+            "@id": "lab:LegalAct"
+          },
+          {
+            "@id": "lab:Authority"
+          },
+          {
+            "@id": "lab:Obligation"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "lab:",
+      "@type": "owl:Ontology",
+      "dct:creator": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori"
+      },
+      "dct:description": {
+        "@language": "en",
+        "@value": "A small OWL ontology for describing EU legal acts, how they relate to each other, and which topics from the EU Data Governance Thesaurus they cover. Independent learning project, not an official EU ontology."
+      },
+      "dct:issued": {
+        "@type": "xsd:date",
+        "@value": "2026-11-03"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Legal Acts Ontology"
+      },
+      "owl:versionInfo": "1.0.0"
+    },
+    {
+      "@id": "lab:isBasedOn",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The subject act is adopted on the basis of the object act, for example an implementing act and its parent act."
+      },
+      "rdfs:domain": {
+        "@id": "lab:LegalAct"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "lab:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "is based on"
+      },
+      "rdfs:range": {
+        "@id": "lab:LegalAct"
       }
     },
     {
@@ -141,69 +289,37 @@
       }
     },
     {
-      "@id": "lab:regulates",
-      "@type": "owl:ObjectProperty",
+      "@id": "lab:ImplementingRegulation",
+      "@type": "owl:Class",
       "rdfs:comment": {
         "@language": "en",
-        "@value": "Links an act to the main subject matter it regulates. Every regulated subject is also a topic of the act."
-      },
-      "rdfs:domain": {
-        "@id": "lab:LegalAct"
+        "@value": "A regulation adopted by the Commission to set uniform conditions for applying another act."
       },
       "rdfs:isDefinedBy": {
         "@id": "lab:"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "regulates"
+        "@value": "Implementing regulation"
       },
-      "rdfs:range": {
-        "@id": "skos:Concept"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "lab:hasTopic"
+      "rdfs:subClassOf": {
+        "@id": "lab:Regulation"
       }
     },
     {
-      "@id": "lab:hasELI",
-      "@type": "owl:ObjectProperty",
+      "@id": "lab:Obligation",
+      "@type": "owl:Class",
       "rdfs:comment": {
         "@language": "en",
-        "@value": "Links an act to its European Legislation Identifier, a stable URI for legislation."
-      },
-      "rdfs:domain": {
-        "@id": "lab:LegalAct"
+        "@value": "A duty that a legal act places on a party."
       },
       "rdfs:isDefinedBy": {
         "@id": "lab:"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "has ELI"
+        "@value": "Obligation"
       }
-    },
-    {
-      "@id": "lab:",
-      "@type": "owl:Ontology",
-      "dct:creator": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori"
-      },
-      "dct:description": {
-        "@language": "en",
-        "@value": "A small OWL ontology for describing EU legal acts, how they relate to each other, and which topics from the EU Data Governance Thesaurus they cover. Independent learning project, not an official EU ontology."
-      },
-      "dct:issued": {
-        "@type": "xsd:date",
-        "@value": "2026-11-03"
-      },
-      "dct:license": {
-        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
-      },
-      "dct:title": {
-        "@language": "en",
-        "@value": "EU Legal Acts Ontology"
-      },
-      "owl:versionInfo": "1.0.0"
     },
     {
       "@id": "lab:imposesObligation",
@@ -227,32 +343,11 @@
       }
     },
     {
-      "@id": "lab:Regulation",
-      "@type": "owl:Class",
-      "owl:disjointWith": {
-        "@id": "lab:Directive"
-      },
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "A legal act that applies directly in all EU Member States."
-      },
-      "rdfs:isDefinedBy": {
-        "@id": "lab:"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Regulation"
-      },
-      "rdfs:subClassOf": {
-        "@id": "lab:LegalAct"
-      }
-    },
-    {
-      "@id": "lab:isBasedOn",
+      "@id": "lab:hasELI",
       "@type": "owl:ObjectProperty",
       "rdfs:comment": {
         "@language": "en",
-        "@value": "The subject act is adopted on the basis of the object act, for example an implementing act and its parent act."
+        "@value": "Links an act to its European Legislation Identifier, a stable URI for legislation."
       },
       "rdfs:domain": {
         "@id": "lab:LegalAct"
@@ -262,138 +357,7 @@
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "is based on"
-      },
-      "rdfs:range": {
-        "@id": "lab:LegalAct"
-      }
-    },
-    {
-      "@id": "_:nc6d132f07a5c43989a4045dc13f178c1b1",
-      "@type": "owl:AllDisjointClasses",
-      "owl:members": {
-        "@list": [
-          {
-            "@id": "lab:LegalAct"
-          },
-          {
-            "@id": "lab:Authority"
-          },
-          {
-            "@id": "lab:Obligation"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "lab:ImplementingRegulation",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "A regulation adopted by the Commission to set uniform conditions for applying another act."
-      },
-      "rdfs:isDefinedBy": {
-        "@id": "lab:"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Implementing regulation"
-      },
-      "rdfs:subClassOf": {
-        "@id": "lab:Regulation"
-      }
-    },
-    {
-      "@id": "lab:Authority",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "A board or body that has tasks under a legal act."
-      },
-      "rdfs:isDefinedBy": {
-        "@id": "lab:"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Authority"
-      }
-    },
-    {
-      "@id": "lab:amendedBy",
-      "@type": "owl:ObjectProperty",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "The subject act has its text changed by the object act."
-      },
-      "rdfs:domain": {
-        "@id": "lab:LegalAct"
-      },
-      "rdfs:isDefinedBy": {
-        "@id": "lab:"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "amended by"
-      },
-      "rdfs:range": {
-        "@id": "lab:LegalAct"
-      }
-    },
-    {
-      "@id": "lab:hasCELEX",
-      "@type": [
-        "owl:DatatypeProperty",
-        "owl:FunctionalProperty"
-      ],
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "The CELEX number of the act, the identifier used by EUR-Lex. An act has exactly one."
-      },
-      "rdfs:domain": {
-        "@id": "lab:LegalAct"
-      },
-      "rdfs:isDefinedBy": {
-        "@id": "lab:"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "has CELEX number"
-      },
-      "rdfs:range": {
-        "@id": "xsd:string"
-      }
-    },
-    {
-      "@id": "lab:Directive",
-      "@type": "owl:Class",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "A legal act that sets goals which Member States must reach by passing their own national laws."
-      },
-      "rdfs:isDefinedBy": {
-        "@id": "lab:"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Directive"
-      },
-      "rdfs:subClassOf": {
-        "@id": "lab:LegalAct"
-      }
-    },
-    {
-      "@id": "lab:pendingReview",
-      "@type": "owl:AnnotationProperty",
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "A language code (for example fr or de) whose labels on this concept have not yet been checked by a native speaker."
-      },
-      "rdfs:isDefinedBy": {
-        "@id": "lab:"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "pending review"
+        "@value": "has ELI"
       }
     },
     {
@@ -415,6 +379,42 @@
       },
       "rdfs:range": {
         "@id": "skos:Concept"
+      }
+    },
+    {
+      "@id": "lab:repealedBy",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The subject act is replaced by the object act."
+      },
+      "rdfs:domain": {
+        "@id": "lab:LegalAct"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "lab:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "repealed by"
+      },
+      "rdfs:range": {
+        "@id": "lab:LegalAct"
+      }
+    },
+    {
+      "@id": "lab:LegalAct",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "An act adopted by the EU institutions, such as a regulation or a directive."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "lab:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Legal act"
       }
     }
   ]

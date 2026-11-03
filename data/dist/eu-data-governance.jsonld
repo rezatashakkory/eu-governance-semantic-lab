@@ -15,21 +15,26 @@
   },
   "@graph": [
     {
-      "@id": "cpt:data-standard",
+      "@id": "cpt:high-value-dataset",
       "@type": "skos:Concept",
+      "dct:source": [
+        {
+          "@id": "act:32019L1024"
+        },
+        {
+          "@id": "act:32023R0138"
+        }
+      ],
       "lab:pendingReview": [
         "fr",
         "de"
       ],
-      "skos:broadMatch": {
-        "@id": "http://eurovoc.europa.eu/2077"
-      },
       "skos:broader": {
-        "@id": "cpt:data-quality-and-metadata"
+        "@id": "cpt:open-data"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "An agreed specification for how data is structured, formatted or exchanged."
+        "@value": "A dataset whose re-use brings important benefits for society, the environment and the economy, and for which special availability rules apply."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -37,159 +42,57 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Data standard"
+          "@value": "High-value dataset"
         },
         {
           "@language": "fr",
-          "@value": "norme de données"
+          "@value": "série de données de forte valeur"
         },
         {
           "@language": "de",
-          "@value": "Datenstandard"
-        }
-      ],
-      "skos:related": [
-        {
-          "@id": "cpt:interoperability"
-        },
-        {
-          "@id": "cpt:reference-data"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:data-processing-service",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32023R2854"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broadMatch": {
-        "@id": "http://eurovoc.europa.eu/c_433922a6"
-      },
-      "skos:broader": {
-        "@id": "cpt:data-governance"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A digital service, such as a cloud service, that gives on-demand network access to a shared pool of configurable computing resources."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Data processing service"
-        },
-        {
-          "@language": "fr",
-          "@value": "service de traitement de données"
-        },
-        {
-          "@language": "de",
-          "@value": "Datenverarbeitungsdienst"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:pseudonymization",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32016R0679"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:altLabel": {
-        "@language": "en",
-        "@value": "Pseudonymisation"
-      },
-      "skos:broader": {
-        "@id": "cpt:data-protection"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Processing personal data so that it can no longer be attributed to a person without additional information that is kept separately."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Pseudonymization"
-        },
-        {
-          "@language": "fr",
-          "@value": "pseudonymisation"
-        },
-        {
-          "@language": "de",
-          "@value": "Pseudonymisierung"
+          "@value": "hochwertiger Datensatz"
         }
       ],
       "skos:related": {
-        "@id": "cpt:anonymization"
+        "@id": "cpt:application-programming-interface"
       }
     },
     {
-      "@id": "cpt:digital-resilience",
+      "@id": "cpt:risk-based-approach",
       "@type": "skos:Concept",
       "dct:source": {
-        "@id": "act:32022R2554"
+        "@id": "act:32024R1689"
       },
       "lab:pendingReview": [
         "fr",
         "de"
       ],
+      "skos:broader": {
+        "@id": "cpt:ai-governance"
+      },
       "skos:definition": {
         "@language": "en",
-        "@value": "The ability of organizations and systems to withstand, respond to and recover from disruptions of digital technology."
+        "@value": "A regulatory approach in which obligations grow with the level of risk."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
       },
-      "skos:narrower": [
-        {
-          "@id": "cpt:cybersecurity"
-        },
-        {
-          "@id": "cpt:ict-risk-management"
-        },
-        {
-          "@id": "cpt:ict-incident"
-        },
-        {
-          "@id": "cpt:digital-operational-resilience-testing"
-        },
-        {
-          "@id": "cpt:essential-entity"
-        },
-        {
-          "@id": "cpt:important-entity"
-        }
-      ],
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Digital resilience"
+          "@value": "Risk-based approach"
         },
         {
           "@language": "fr",
-          "@value": "résilience numérique"
+          "@value": "approche fondée sur les risques"
         },
         {
           "@language": "de",
-          "@value": "digitale Resilienz"
+          "@value": "risikobasierter Ansatz"
         }
       ],
-      "skos:topConceptOf": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      "skos:related": {
+        "@id": "cpt:prohibited-ai-practice"
       }
     },
     {
@@ -231,17 +134,62 @@
       }
     },
     {
-      "@id": "cpt:ontology",
+      "@id": "cpt:ai-system",
       "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32024R1689"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
       "skos:broader": {
-        "@id": "cpt:data-quality-and-metadata"
+        "@id": "cpt:ai-governance"
+      },
+      "skos:closeMatch": {
+        "@id": "http://eurovoc.europa.eu/3030"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "A formal, machine-readable model of the classes, properties and relationships in a domain."
+        "@value": "A machine-based system that infers from its inputs how to generate outputs such as predictions, content, recommendations or decisions."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:narrower": {
+        "@id": "cpt:high-risk-ai-system"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "AI system"
+        },
+        {
+          "@language": "fr",
+          "@value": "système d'IA"
+        },
+        {
+          "@language": "de",
+          "@value": "KI-System"
+        }
+      ]
+    },
+    {
+      "@id": "cpt:anonymization",
+      "@type": "skos:Concept",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Anonymisation"
+      },
+      "skos:broader": {
+        "@id": "cpt:data-protection"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Changing data irreversibly so that individuals can no longer be identified."
       },
       "skos:exactMatch": {
-        "@id": "http://eurovoc.europa.eu/c_782eaeb3"
+        "@id": "http://eurovoc.europa.eu/c_7bb1a021"
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -249,23 +197,287 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Ontology"
+          "@value": "Anonymization"
         },
         {
           "@language": "fr",
-          "@value": "ontologie"
+          "@value": "anonymisation"
         },
         {
           "@language": "de",
-          "@value": "Ontologie"
+          "@value": "Anonymisierung"
         }
       ],
       "skos:related": {
-        "@id": "cpt:thesaurus"
+        "@id": "cpt:pseudonymization"
       }
     },
     {
-      "@id": "cpt:general-purpose-ai-model",
+      "@id": "cpt:data-intermediation-service",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32022R0868"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:data-sharing"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A service that sets up commercial relationships between data holders and data users by technical, legal or other means."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data intermediation service"
+        },
+        {
+          "@language": "fr",
+          "@value": "service d'intermédiation de données"
+        },
+        {
+          "@language": "de",
+          "@value": "Datenvermittlungsdienst"
+        }
+      ]
+    },
+    {
+      "@id": "cpt:special-categories-of-personal-data",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32016R0679"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:personal-data"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Sensitive personal data, such as health data or data revealing racial or ethnic origin, that is subject to stricter processing rules."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Special categories of personal data"
+        },
+        {
+          "@language": "fr",
+          "@value": "catégories particulières de données à caractère personnel"
+        },
+        {
+          "@language": "de",
+          "@value": "besondere Kategorien personenbezogener Daten"
+        }
+      ]
+    },
+    {
+      "@id": "cpt:common-european-data-space",
+      "@type": "skos:Concept",
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:data-sharing"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A sector-specific or cross-sector framework for trusted data sharing in the EU, built on shared rules, standards and infrastructure."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Common European data space"
+        },
+        {
+          "@language": "fr",
+          "@value": "espace européen commun de données"
+        },
+        {
+          "@language": "de",
+          "@value": "gemeinsamer europäischer Datenraum"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:interoperability"
+      }
+    },
+    {
+      "@id": "cpt:ict-incident",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32022R2554"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:digital-resilience"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A single event, or a series of linked events, not planned by the organization, that harms the security of network and information systems."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:narrower": {
+        "@id": "cpt:incident-reporting"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "ICT incident"
+        },
+        {
+          "@language": "fr",
+          "@value": "incident lié aux TIC"
+        },
+        {
+          "@language": "de",
+          "@value": "IKT-bezogener Vorfall"
+        }
+      ]
+    },
+    {
+      "@id": "cpt:data-sharing",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32022R0868"
+      },
+      "skos:broader": {
+        "@id": "cpt:data-governance"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Making data available to other parties for use under agreed conditions."
+      },
+      "skos:exactMatch": {
+        "@id": "http://eurovoc.europa.eu/c_eaccd9f4"
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:narrower": [
+        {
+          "@id": "cpt:data-holder"
+        },
+        {
+          "@id": "cpt:data-user"
+        },
+        {
+          "@id": "cpt:data-intermediation-service"
+        },
+        {
+          "@id": "cpt:data-altruism"
+        },
+        {
+          "@id": "cpt:common-european-data-space"
+        }
+      ],
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data sharing"
+        },
+        {
+          "@language": "fr",
+          "@value": "partage de données"
+        },
+        {
+          "@language": "de",
+          "@value": "Datenaustausch"
+        }
+      ]
+    },
+    {
+      "@id": "cpt:data-altruism",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32022R0868"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:data-sharing"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The voluntary sharing of data, based on consent or permission, for purposes of general interest and without seeking a reward."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data altruism"
+        },
+        {
+          "@language": "fr",
+          "@value": "altruisme en matière de données"
+        },
+        {
+          "@language": "de",
+          "@value": "Datenaltruismus"
+        }
+      ]
+    },
+    {
+      "@id": "cpt:data-portability",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32016R0679"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:data-subject"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The right of a person to receive their personal data in a structured, commonly used and machine-readable format and to pass it to another controller."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data portability"
+        },
+        {
+          "@language": "fr",
+          "@value": "portabilité des données"
+        },
+        {
+          "@language": "de",
+          "@value": "Datenübertragbarkeit"
+        }
+      ]
+    },
+    {
+      "@id": "cpt:conformity-assessment",
       "@type": "skos:Concept",
       "dct:source": {
         "@id": "act:32024R1689"
@@ -279,7 +491,7 @@
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "An AI model trained on large amounts of data that can competently perform a wide range of tasks and be built into many systems."
+        "@value": "A process that shows whether a product or system meets the requirements that apply to it."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -287,20 +499,216 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "General-purpose AI model"
+          "@value": "Conformity assessment"
         },
         {
           "@language": "fr",
-          "@value": "modèle d'IA à usage général"
+          "@value": "évaluation de la conformité"
         },
         {
           "@language": "de",
-          "@value": "KI-Modell mit allgemeinem Verwendungszweck"
+          "@value": "Konformitätsbewertung"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:high-risk-ai-system"
+      }
+    },
+    {
+      "@id": "cpt:personal-data-breach",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32016R0679"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:data-protection"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A security incident that leads to the accidental or unlawful destruction, loss, alteration, disclosure of or access to personal data."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Personal data breach"
+        },
+        {
+          "@language": "fr",
+          "@value": "violation de données à caractère personnel"
+        },
+        {
+          "@language": "de",
+          "@value": "Verletzung des Schutzes personenbezogener Daten"
         }
       ]
     },
     {
-      "@id": "cpt:data-protection-impact-assessment",
+      "@id": "cpt:open-data-portal",
+      "@type": "skos:Concept",
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:open-data-and-reuse"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A web site where public bodies publish and describe datasets so that people can find and download them."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Open data portal"
+        },
+        {
+          "@language": "fr",
+          "@value": "portail de données ouvertes"
+        },
+        {
+          "@language": "de",
+          "@value": "Portal für offene Daten"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:data-catalog"
+      }
+    },
+    {
+      "@id": "cpt:data-holder",
+      "@type": "skos:Concept",
+      "dct:source": [
+        {
+          "@id": "act:32022R0868"
+        },
+        {
+          "@id": "act:32023R2854"
+        }
+      ],
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:data-sharing"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A party that has the right or the ability to grant access to, or to share, certain data."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data holder"
+        },
+        {
+          "@language": "fr",
+          "@value": "détenteur de données"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateninhaber"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:data-user"
+      }
+    },
+    {
+      "@id": "cpt:open-license",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32019L1024"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Open licence"
+      },
+      "skos:broader": {
+        "@id": "cpt:open-data-and-reuse"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A license that allows data to be freely re-used, with at most minimal conditions such as attribution."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Open license"
+        },
+        {
+          "@language": "fr",
+          "@value": "licence ouverte"
+        },
+        {
+          "@language": "de",
+          "@value": "offene Lizenz"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:open-data"
+      }
+    },
+    {
+      "@id": "cpt:data-processing-service",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32023R2854"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broadMatch": {
+        "@id": "http://eurovoc.europa.eu/c_433922a6"
+      },
+      "skos:broader": {
+        "@id": "cpt:data-governance"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A digital service, such as a cloud service, that gives on-demand network access to a shared pool of configurable computing resources."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data processing service"
+        },
+        {
+          "@language": "fr",
+          "@value": "service de traitement de données"
+        },
+        {
+          "@language": "de",
+          "@value": "Datenverarbeitungsdienst"
+        }
+      ]
+    },
+    {
+      "@id": "cpt:international-data-transfer",
       "@type": "skos:Concept",
       "dct:source": {
         "@id": "act:32016R0679"
@@ -311,14 +719,17 @@
       ],
       "skos:altLabel": {
         "@language": "en",
-        "@value": "DPIA"
+        "@value": "Transfer to third countries"
+      },
+      "skos:broadMatch": {
+        "@id": "http://eurovoc.europa.eu/4502"
       },
       "skos:broader": {
         "@id": "cpt:data-protection"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "An assessment of the risks that a processing operation poses to individuals, required before processing that is likely to be high risk."
+        "@value": "The transfer of personal data to a country outside the European Economic Area or to an international organization, which requires safeguards."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -326,17 +737,142 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Data protection impact assessment"
+          "@value": "International data transfer"
         },
         {
           "@language": "fr",
-          "@value": "analyse d'impact relative à la protection des données"
+          "@value": "transfert international de données"
         },
         {
           "@language": "de",
-          "@value": "Datenschutz-Folgenabschätzung"
+          "@value": "internationale Datenübermittlung"
         }
       ]
+    },
+    {
+      "@id": "cpt:data-processor",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32016R0679"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Processor"
+      },
+      "skos:broader": {
+        "@id": "cpt:data-protection"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A party that processes personal data on behalf of a controller."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data processor"
+        },
+        {
+          "@language": "fr",
+          "@value": "sous-traitant"
+        },
+        {
+          "@language": "de",
+          "@value": "Auftragsverarbeiter"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:data-controller"
+      }
+    },
+    {
+      "@id": "cpt:prohibited-ai-practice",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32024R1689"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:ai-governance"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A use of AI that the AI Act bans outright because it is seen as an unacceptable risk."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Prohibited AI practice"
+        },
+        {
+          "@language": "fr",
+          "@value": "pratique d'IA interdite"
+        },
+        {
+          "@language": "de",
+          "@value": "verbotene KI-Praktik"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:risk-based-approach"
+      }
+    },
+    {
+      "@id": "cpt:data-governance",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32022R0868"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The roles, rules, processes and standards that make sure data is managed, shared and used in a trusted way."
+      },
+      "skos:exactMatch": {
+        "@id": "http://eurovoc.europa.eu/c_7e60137b"
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:narrower": [
+        {
+          "@id": "cpt:data-sharing"
+        },
+        {
+          "@id": "cpt:connected-product"
+        },
+        {
+          "@id": "cpt:data-processing-service"
+        }
+      ],
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data governance"
+        },
+        {
+          "@language": "fr",
+          "@value": "gouvernance des données"
+        },
+        {
+          "@language": "de",
+          "@value": "Daten-Governance"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      }
     },
     {
       "@id": "cpt:ict-risk-management",
@@ -388,7 +924,92 @@
       ]
     },
     {
-      "@id": "cpt:data-processor",
+      "@id": "cpt:linked-data",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "https://www.w3.org/DesignIssues/LinkedData.html"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Linked Open Data"
+      },
+      "skos:broader": {
+        "@id": "cpt:data-quality-and-metadata"
+      },
+      "skos:closeMatch": {
+        "@id": "http://eurovoc.europa.eu/c_a17a2156"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A method of publishing structured data on the web with URIs and RDF so that datasets can be linked to each other."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Linked data"
+        },
+        {
+          "@language": "fr",
+          "@value": "données liées"
+        },
+        {
+          "@language": "de",
+          "@value": "verknüpfte Daten"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:persistent-identifier"
+      }
+    },
+    {
+      "@id": "cpt:incident-reporting",
+      "@type": "skos:Concept",
+      "dct:source": [
+        {
+          "@id": "act:32022R2554"
+        },
+        {
+          "@id": "act:32022L2555"
+        }
+      ],
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:ict-incident"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The duty to notify competent authorities, and sometimes affected parties, of significant incidents within set deadlines."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Incident reporting"
+        },
+        {
+          "@language": "fr",
+          "@value": "notification d'incident"
+        },
+        {
+          "@language": "de",
+          "@value": "Meldung von Vorfällen"
+        }
+      ]
+    },
+    {
+      "@id": "cpt:data-protection-impact-assessment",
       "@type": "skos:Concept",
       "dct:source": {
         "@id": "act:32016R0679"
@@ -399,14 +1020,14 @@
       ],
       "skos:altLabel": {
         "@language": "en",
-        "@value": "Processor"
+        "@value": "DPIA"
       },
       "skos:broader": {
         "@id": "cpt:data-protection"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "A party that processes personal data on behalf of a controller."
+        "@value": "An assessment of the risks that a processing operation poses to individuals, required before processing that is likely to be high risk."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -414,26 +1035,62 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Data processor"
+          "@value": "Data protection impact assessment"
         },
         {
           "@language": "fr",
-          "@value": "sous-traitant"
+          "@value": "analyse d'impact relative à la protection des données"
         },
         {
           "@language": "de",
-          "@value": "Auftragsverarbeiter"
+          "@value": "Datenschutz-Folgenabschätzung"
+        }
+      ]
+    },
+    {
+      "@id": "cpt:persistent-identifier",
+      "@type": "skos:Concept",
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "PID"
+      },
+      "skos:broader": {
+        "@id": "cpt:data-quality-and-metadata"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A long-lasting reference, such as a URI, that identifies a resource and stays stable over time."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Persistent identifier"
+        },
+        {
+          "@language": "fr",
+          "@value": "identifiant pérenne"
+        },
+        {
+          "@language": "de",
+          "@value": "persistenter Identifikator"
         }
       ],
       "skos:related": {
-        "@id": "cpt:data-controller"
+        "@id": "cpt:linked-data"
       }
     },
     {
-      "@id": "cpt:application-programming-interface",
+      "@id": "cpt:pseudonymization",
       "@type": "skos:Concept",
       "dct:source": {
-        "@id": "act:32019L1024"
+        "@id": "act:32016R0679"
       },
       "lab:pendingReview": [
         "fr",
@@ -441,14 +1098,14 @@
       ],
       "skos:altLabel": {
         "@language": "en",
-        "@value": "API"
+        "@value": "Pseudonymisation"
       },
       "skos:broader": {
-        "@id": "cpt:open-data-and-reuse"
+        "@id": "cpt:data-protection"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "A set of functions and rules that lets software request data or services from another system."
+        "@value": "Processing personal data so that it can no longer be attributed to a person without additional information that is kept separately."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -456,58 +1113,133 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Application programming interface"
+          "@value": "Pseudonymization"
         },
         {
           "@language": "fr",
-          "@value": "interface de programmation d'applications"
+          "@value": "pseudonymisation"
         },
         {
           "@language": "de",
-          "@value": "Anwendungsprogrammierschnittstelle"
+          "@value": "Pseudonymisierung"
         }
       ],
       "skos:related": {
-        "@id": "cpt:high-value-dataset"
+        "@id": "cpt:anonymization"
       }
     },
     {
-      "@id": "cpt:ict-third-party-risk",
+      "@id": "cpt:data-subject",
       "@type": "skos:Concept",
       "dct:source": {
-        "@id": "act:32022R2554"
+        "@id": "act:32016R0679"
       },
       "lab:pendingReview": [
         "fr",
         "de"
       ],
       "skos:broader": {
-        "@id": "cpt:ict-risk-management"
+        "@id": "cpt:data-protection"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "The risk that arises from relying on external providers of ICT services, such as cloud providers."
+        "@value": "An identified or identifiable natural person whose personal data is processed."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
       },
+      "skos:narrower": [
+        {
+          "@id": "cpt:right-to-erasure"
+        },
+        {
+          "@id": "cpt:data-portability"
+        }
+      ],
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "ICT third-party risk"
+          "@value": "Data subject"
         },
         {
           "@language": "fr",
-          "@value": "risque lié aux prestataires tiers de services TIC"
+          "@value": "personne concernée"
         },
         {
           "@language": "de",
-          "@value": "IKT-Drittparteienrisiko"
+          "@value": "betroffene Person"
         }
-      ]
+      ],
+      "skos:related": {
+        "@id": "cpt:personal-data"
+      }
     },
     {
-      "@id": "cpt:ai-system",
+      "@id": "cpt:data-quality-and-metadata",
+      "@type": "skos:Concept",
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Practices and standards that keep data accurate, well described and easy to find, understand and combine."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:narrower": [
+        {
+          "@id": "cpt:data-quality"
+        },
+        {
+          "@id": "cpt:metadata"
+        },
+        {
+          "@id": "cpt:controlled-vocabulary"
+        },
+        {
+          "@id": "cpt:ontology"
+        },
+        {
+          "@id": "cpt:linked-data"
+        },
+        {
+          "@id": "cpt:persistent-identifier"
+        },
+        {
+          "@id": "cpt:interoperability"
+        },
+        {
+          "@id": "cpt:data-standard"
+        },
+        {
+          "@id": "cpt:reference-data"
+        },
+        {
+          "@id": "cpt:fair-principles"
+        }
+      ],
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data quality and metadata"
+        },
+        {
+          "@language": "fr",
+          "@value": "qualité des données et métadonnées"
+        },
+        {
+          "@language": "de",
+          "@value": "Datenqualität und Metadaten"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      }
+    },
+    {
+      "@id": "cpt:ai-regulatory-sandbox",
       "@type": "skos:Concept",
       "dct:source": {
         "@id": "act:32024R1689"
@@ -519,55 +1251,44 @@
       "skos:broader": {
         "@id": "cpt:ai-governance"
       },
-      "skos:closeMatch": {
-        "@id": "http://eurovoc.europa.eu/3030"
-      },
       "skos:definition": {
         "@language": "en",
-        "@value": "A machine-based system that infers from its inputs how to generate outputs such as predictions, content, recommendations or decisions."
+        "@value": "A controlled framework in which AI systems can be developed and tested under regulatory supervision before they are placed on the market."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
       },
-      "skos:narrower": {
-        "@id": "cpt:high-risk-ai-system"
-      },
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "AI system"
+          "@value": "AI regulatory sandbox"
         },
         {
           "@language": "fr",
-          "@value": "système d'IA"
+          "@value": "bac à sable réglementaire de l'IA"
         },
         {
           "@language": "de",
-          "@value": "KI-System"
+          "@value": "KI-Reallabor"
         }
       ]
     },
     {
-      "@id": "cpt:data-holder",
+      "@id": "cpt:re-use-of-documents",
       "@type": "skos:Concept",
-      "dct:source": [
-        {
-          "@id": "act:32022R0868"
-        },
-        {
-          "@id": "act:32023R2854"
-        }
-      ],
+      "dct:source": {
+        "@id": "act:32019L1024"
+      },
       "lab:pendingReview": [
         "fr",
         "de"
       ],
       "skos:broader": {
-        "@id": "cpt:data-sharing"
+        "@id": "cpt:open-data-and-reuse"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "A party that has the right or the ability to grant access to, or to share, certain data."
+        "@value": "Use of documents held by public sector bodies for commercial or non-commercial purposes other than their original public task."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -575,58 +1296,54 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Data holder"
+          "@value": "Re-use of documents"
         },
         {
           "@language": "fr",
-          "@value": "détenteur de données"
+          "@value": "réutilisation de documents"
         },
         {
           "@language": "de",
-          "@value": "Dateninhaber"
+          "@value": "Weiterverwendung von Dokumenten"
         }
       ],
       "skos:related": {
-        "@id": "cpt:data-user"
+        "@id": "cpt:public-sector-information"
       }
     },
     {
-      "@id": "cpt:ict-incident",
+      "@id": "cpt:ontology",
       "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32022R2554"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
       "skos:broader": {
-        "@id": "cpt:digital-resilience"
+        "@id": "cpt:data-quality-and-metadata"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "A single event, or a series of linked events, not planned by the organization, that harms the security of network and information systems."
+        "@value": "A formal, machine-readable model of the classes, properties and relationships in a domain."
+      },
+      "skos:exactMatch": {
+        "@id": "http://eurovoc.europa.eu/c_782eaeb3"
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
       },
-      "skos:narrower": {
-        "@id": "cpt:incident-reporting"
-      },
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "ICT incident"
+          "@value": "Ontology"
         },
         {
           "@language": "fr",
-          "@value": "incident lié aux TIC"
+          "@value": "ontologie"
         },
         {
           "@language": "de",
-          "@value": "IKT-bezogener Vorfall"
+          "@value": "Ontologie"
         }
-      ]
+      ],
+      "skos:related": {
+        "@id": "cpt:thesaurus"
+      }
     },
     {
       "@id": "cpt:open-data-and-reuse",
@@ -687,431 +1404,11 @@
       }
     },
     {
-      "@id": "cpt:essential-entity",
+      "@id": "cpt:fair-principles",
       "@type": "skos:Concept",
       "dct:source": {
-        "@id": "act:32022L2555"
+        "@id": "https://doi.org/10.1038/sdata.2016.18"
       },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:digital-resilience"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A type of organization in sectors of high criticality that is subject to the full supervisory regime of the NIS2 Directive."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Essential entity"
-        },
-        {
-          "@language": "fr",
-          "@value": "entité essentielle"
-        },
-        {
-          "@language": "de",
-          "@value": "wesentliche Einrichtung"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:important-entity"
-      }
-    },
-    {
-      "@id": "cpt:data-governance",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32022R0868"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "The roles, rules, processes and standards that make sure data is managed, shared and used in a trusted way."
-      },
-      "skos:exactMatch": {
-        "@id": "http://eurovoc.europa.eu/c_7e60137b"
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:narrower": [
-        {
-          "@id": "cpt:data-sharing"
-        },
-        {
-          "@id": "cpt:connected-product"
-        },
-        {
-          "@id": "cpt:data-processing-service"
-        }
-      ],
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Data governance"
-        },
-        {
-          "@language": "fr",
-          "@value": "gouvernance des données"
-        },
-        {
-          "@language": "de",
-          "@value": "Daten-Governance"
-        }
-      ],
-      "skos:topConceptOf": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      }
-    },
-    {
-      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori",
-      "@type": "foaf:Person",
-      "foaf:name": "Reza Tashakkori"
-    },
-    {
-      "@id": "cpt:open-data",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32019L1024"
-      },
-      "skos:broader": {
-        "@id": "cpt:open-data-and-reuse"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Data that anyone can freely access, use and share, subject at most to conditions such as attribution."
-      },
-      "skos:exactMatch": {
-        "@id": "http://eurovoc.europa.eu/c_5ea6e5c4"
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:narrower": {
-        "@id": "cpt:high-value-dataset"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Open data"
-        },
-        {
-          "@language": "fr",
-          "@value": "données ouvertes"
-        },
-        {
-          "@language": "de",
-          "@value": "offene Daten"
-        }
-      ],
-      "skos:related": [
-        {
-          "@id": "cpt:machine-readable-format"
-        },
-        {
-          "@id": "cpt:open-license"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:data-intermediation-service",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32022R0868"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:data-sharing"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A service that sets up commercial relationships between data holders and data users by technical, legal or other means."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Data intermediation service"
-        },
-        {
-          "@language": "fr",
-          "@value": "service d'intermédiation de données"
-        },
-        {
-          "@language": "de",
-          "@value": "Datenvermittlungsdienst"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:thesaurus",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "cpt:controlled-vocabulary"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A controlled vocabulary whose terms are linked by relationships such as broader, narrower and related."
-      },
-      "skos:exactMatch": {
-        "@id": "http://eurovoc.europa.eu/4138"
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Thesaurus"
-        },
-        {
-          "@language": "fr",
-          "@value": "thésaurus"
-        },
-        {
-          "@language": "de",
-          "@value": "Thesaurus"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:ontology"
-      }
-    },
-    {
-      "@id": "cpt:re-use-of-documents",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32019L1024"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:open-data-and-reuse"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Use of documents held by public sector bodies for commercial or non-commercial purposes other than their original public task."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Re-use of documents"
-        },
-        {
-          "@language": "fr",
-          "@value": "réutilisation de documents"
-        },
-        {
-          "@language": "de",
-          "@value": "Weiterverwendung von Dokumenten"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:public-sector-information"
-      }
-    },
-    {
-      "@id": "cpt:data-altruism",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32022R0868"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:data-sharing"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "The voluntary sharing of data, based on consent or permission, for purposes of general interest and without seeking a reward."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Data altruism"
-        },
-        {
-          "@language": "fr",
-          "@value": "altruisme en matière de données"
-        },
-        {
-          "@language": "de",
-          "@value": "Datenaltruismus"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:prohibited-ai-practice",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32024R1689"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:ai-governance"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A use of AI that the AI Act bans outright because it is seen as an unacceptable risk."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Prohibited AI practice"
-        },
-        {
-          "@language": "fr",
-          "@value": "pratique d'IA interdite"
-        },
-        {
-          "@language": "de",
-          "@value": "verbotene KI-Praktik"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:risk-based-approach"
-      }
-    },
-    {
-      "@id": "cpt:ai-governance",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32024R1689"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:definition": {
-        "@language": "en",
-        "@value": "The rules, processes and oversight that guide how AI systems are developed, placed on the market and used."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:narrower": [
-        {
-          "@id": "cpt:ai-system"
-        },
-        {
-          "@id": "cpt:general-purpose-ai-model"
-        },
-        {
-          "@id": "cpt:prohibited-ai-practice"
-        },
-        {
-          "@id": "cpt:risk-based-approach"
-        },
-        {
-          "@id": "cpt:ai-provider"
-        },
-        {
-          "@id": "cpt:ai-deployer"
-        },
-        {
-          "@id": "cpt:conformity-assessment"
-        },
-        {
-          "@id": "cpt:transparency-obligation"
-        },
-        {
-          "@id": "cpt:human-oversight"
-        },
-        {
-          "@id": "cpt:ai-regulatory-sandbox"
-        }
-      ],
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "AI governance"
-        },
-        {
-          "@language": "fr",
-          "@value": "gouvernance de l'intelligence artificielle"
-        },
-        {
-          "@language": "de",
-          "@value": "KI-Governance"
-        }
-      ],
-      "skos:topConceptOf": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      }
-    },
-    {
-      "@id": "cpt:high-value-dataset",
-      "@type": "skos:Concept",
-      "dct:source": [
-        {
-          "@id": "act:32019L1024"
-        },
-        {
-          "@id": "act:32023R0138"
-        }
-      ],
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:open-data"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A dataset whose re-use brings important benefits for society, the environment and the economy, and for which special availability rules apply."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "High-value dataset"
-        },
-        {
-          "@language": "fr",
-          "@value": "série de données de forte valeur"
-        },
-        {
-          "@language": "de",
-          "@value": "hochwertiger Datensatz"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:application-programming-interface"
-      }
-    },
-    {
-      "@id": "cpt:controlled-vocabulary",
-      "@type": "skos:Concept",
       "lab:pendingReview": [
         "fr",
         "de"
@@ -1121,45 +1418,7 @@
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "An agreed list of terms used to describe things in a consistent way."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:narrower": {
-        "@id": "cpt:thesaurus"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Controlled vocabulary"
-        },
-        {
-          "@language": "fr",
-          "@value": "vocabulaire contrôlé"
-        },
-        {
-          "@language": "de",
-          "@value": "kontrolliertes Vokabular"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:personal-data-breach",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32016R0679"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:data-protection"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A security incident that leads to the accidental or unlawful destruction, loss, alteration, disclosure of or access to personal data."
+        "@value": "Guiding principles for making data findable, accessible, interoperable and reusable."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -1167,35 +1426,33 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Personal data breach"
+          "@value": "FAIR principles"
         },
         {
           "@language": "fr",
-          "@value": "violation de données à caractère personnel"
+          "@value": "principes FAIR"
         },
         {
           "@language": "de",
-          "@value": "Verletzung des Schutzes personenbezogener Daten"
+          "@value": "FAIR-Prinzipien"
         }
-      ]
+      ],
+      "skos:related": {
+        "@id": "cpt:metadata"
+      }
     },
     {
-      "@id": "cpt:persistent-identifier",
+      "@id": "cpt:data-quality",
       "@type": "skos:Concept",
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:altLabel": {
-        "@language": "en",
-        "@value": "PID"
-      },
       "skos:broader": {
         "@id": "cpt:data-quality-and-metadata"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "A long-lasting reference, such as a URI, that identifies a resource and stays stable over time."
+        "@value": "The degree to which data is accurate, complete, consistent, timely and fit for its intended use."
+      },
+      "skos:exactMatch": {
+        "@id": "http://eurovoc.europa.eu/66901"
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -1203,23 +1460,20 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Persistent identifier"
+          "@value": "Data quality"
         },
         {
           "@language": "fr",
-          "@value": "identifiant pérenne"
+          "@value": "qualité des données"
         },
         {
           "@language": "de",
-          "@value": "persistenter Identifikator"
+          "@value": "Datenqualität"
         }
-      ],
-      "skos:related": {
-        "@id": "cpt:linked-data"
-      }
+      ]
     },
     {
-      "@id": "cpt:digital-operational-resilience-testing",
+      "@id": "cpt:ict-third-party-risk",
       "@type": "skos:Concept",
       "dct:source": {
         "@id": "act:32022R2554"
@@ -1229,83 +1483,11 @@
         "de"
       ],
       "skos:broader": {
-        "@id": "cpt:digital-resilience"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Tests, such as vulnerability scans and threat-led penetration tests, that check whether ICT systems can withstand disruption."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Digital operational resilience testing"
-        },
-        {
-          "@language": "fr",
-          "@value": "tests de résilience opérationnelle numérique"
-        },
-        {
-          "@language": "de",
-          "@value": "Testen der digitalen operationalen Resilienz"
-        }
-      ],
-      "skos:related": {
         "@id": "cpt:ict-risk-management"
-      }
-    },
-    {
-      "@id": "cpt:metadata",
-      "@type": "skos:Concept",
-      "skos:broader": {
-        "@id": "cpt:data-quality-and-metadata"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "Data that describes other data, such as its origin, meaning, format and conditions of use."
-      },
-      "skos:exactMatch": {
-        "@id": "http://eurovoc.europa.eu/c_40f54e0c"
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:narrower": {
-        "@id": "cpt:data-catalog"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Metadata"
-        },
-        {
-          "@language": "fr",
-          "@value": "métadonnée"
-        },
-        {
-          "@language": "de",
-          "@value": "Metadaten"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:fair-principles"
-      }
-    },
-    {
-      "@id": "cpt:common-european-data-space",
-      "@type": "skos:Concept",
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:data-sharing"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A sector-specific or cross-sector framework for trusted data sharing in the EU, built on shared rules, standards and infrastructure."
+        "@value": "The risk that arises from relying on external providers of ICT services, such as cloud providers."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -1313,181 +1495,52 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Common European data space"
+          "@value": "ICT third-party risk"
         },
         {
           "@language": "fr",
-          "@value": "espace européen commun de données"
+          "@value": "risque lié aux prestataires tiers de services TIC"
         },
         {
           "@language": "de",
-          "@value": "gemeinsamer europäischer Datenraum"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:interoperability"
-      }
-    },
-    {
-      "@id": "cpt:public-sector-information",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32019L1024"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:altLabel": {
-        "@language": "en",
-        "@value": "PSI"
-      },
-      "skos:broader": {
-        "@id": "cpt:open-data-and-reuse"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Documents and data held by public sector bodies, often made available for re-use."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Public sector information"
-        },
-        {
-          "@language": "fr",
-          "@value": "informations du secteur public"
-        },
-        {
-          "@language": "de",
-          "@value": "Informationen des öffentlichen Sektors"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:re-use-of-documents"
-      }
-    },
-    {
-      "@id": "cpt:important-entity",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32022L2555"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:digital-resilience"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A type of organization in listed sectors that is subject to a lighter supervisory regime than essential entities under the NIS2 Directive."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Important entity"
-        },
-        {
-          "@language": "fr",
-          "@value": "entité importante"
-        },
-        {
-          "@language": "de",
-          "@value": "wichtige Einrichtung"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:essential-entity"
-      }
-    },
-    {
-      "@id": "cpt:special-categories-of-personal-data",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32016R0679"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:personal-data"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Sensitive personal data, such as health data or data revealing racial or ethnic origin, that is subject to stricter processing rules."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Special categories of personal data"
-        },
-        {
-          "@language": "fr",
-          "@value": "catégories particulières de données à caractère personnel"
-        },
-        {
-          "@language": "de",
-          "@value": "besondere Kategorien personenbezogener Daten"
+          "@value": "IKT-Drittparteienrisiko"
         }
       ]
     },
     {
-      "@id": "cpt:data-subject",
+      "@id": "cpt:product-with-digital-elements",
       "@type": "skos:Concept",
       "dct:source": {
-        "@id": "act:32016R0679"
+        "@id": "act:32024R2847"
       },
       "lab:pendingReview": [
         "fr",
         "de"
       ],
       "skos:broader": {
-        "@id": "cpt:data-protection"
+        "@id": "cpt:cybersecurity"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "An identified or identifiable natural person whose personal data is processed."
+        "@value": "A software or hardware product, together with its remote data processing solutions, that is covered by the cybersecurity requirements of the Cyber Resilience Act."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
       },
-      "skos:narrower": [
-        {
-          "@id": "cpt:right-to-erasure"
-        },
-        {
-          "@id": "cpt:data-portability"
-        }
-      ],
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Data subject"
+          "@value": "Product with digital elements"
         },
         {
           "@language": "fr",
-          "@value": "personne concernée"
+          "@value": "produit comportant des éléments numériques"
         },
         {
           "@language": "de",
-          "@value": "betroffene Person"
+          "@value": "Produkt mit digitalen Elementen"
         }
-      ],
-      "skos:related": {
-        "@id": "cpt:personal-data"
-      }
+      ]
     },
     {
       "@id": "cpt:data-protection",
@@ -1559,6 +1612,86 @@
       }
     },
     {
+      "@id": "cpt:open-data",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32019L1024"
+      },
+      "skos:broader": {
+        "@id": "cpt:open-data-and-reuse"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Data that anyone can freely access, use and share, subject at most to conditions such as attribution."
+      },
+      "skos:exactMatch": {
+        "@id": "http://eurovoc.europa.eu/c_5ea6e5c4"
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:narrower": {
+        "@id": "cpt:high-value-dataset"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Open data"
+        },
+        {
+          "@language": "fr",
+          "@value": "données ouvertes"
+        },
+        {
+          "@language": "de",
+          "@value": "offene Daten"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "cpt:machine-readable-format"
+        },
+        {
+          "@id": "cpt:open-license"
+        }
+      ]
+    },
+    {
+      "@id": "cpt:general-purpose-ai-model",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32024R1689"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:ai-governance"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "An AI model trained on large amounts of data that can competently perform a wide range of tasks and be built into many systems."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "General-purpose AI model"
+        },
+        {
+          "@language": "fr",
+          "@value": "modèle d'IA à usage général"
+        },
+        {
+          "@language": "de",
+          "@value": "KI-Modell mit allgemeinem Verwendungszweck"
+        }
+      ]
+    },
+    {
       "@id": "cpt:consent",
       "@type": "skos:Concept",
       "dct:source": {
@@ -1592,467 +1725,6 @@
           "@value": "Einwilligung"
         }
       ]
-    },
-    {
-      "@id": "cpt:anonymization",
-      "@type": "skos:Concept",
-      "skos:altLabel": {
-        "@language": "en",
-        "@value": "Anonymisation"
-      },
-      "skos:broader": {
-        "@id": "cpt:data-protection"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Changing data irreversibly so that individuals can no longer be identified."
-      },
-      "skos:exactMatch": {
-        "@id": "http://eurovoc.europa.eu/c_7bb1a021"
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Anonymization"
-        },
-        {
-          "@language": "fr",
-          "@value": "anonymisation"
-        },
-        {
-          "@language": "de",
-          "@value": "Anonymisierung"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:pseudonymization"
-      }
-    },
-    {
-      "@id": "cpt:ai-regulatory-sandbox",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32024R1689"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:ai-governance"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A controlled framework in which AI systems can be developed and tested under regulatory supervision before they are placed on the market."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "AI regulatory sandbox"
-        },
-        {
-          "@language": "fr",
-          "@value": "bac à sable réglementaire de l'IA"
-        },
-        {
-          "@language": "de",
-          "@value": "KI-Reallabor"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:risk-based-approach",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32024R1689"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:ai-governance"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A regulatory approach in which obligations grow with the level of risk."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Risk-based approach"
-        },
-        {
-          "@language": "fr",
-          "@value": "approche fondée sur les risques"
-        },
-        {
-          "@language": "de",
-          "@value": "risikobasierter Ansatz"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:prohibited-ai-practice"
-      }
-    },
-    {
-      "@id": "cpt:data-controller",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32016R0679"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:altLabel": {
-        "@language": "en",
-        "@value": "Controller"
-      },
-      "skos:broader": {
-        "@id": "cpt:data-protection"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "The party that decides why and how personal data is processed."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Data controller"
-        },
-        {
-          "@language": "fr",
-          "@value": "responsable du traitement"
-        },
-        {
-          "@language": "de",
-          "@value": "Verantwortlicher"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:data-processor"
-      }
-    },
-    {
-      "@id": "cpt:ai-provider",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32024R1689"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:ai-governance"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A party that develops an AI system, or has it developed, and places it on the market or puts it into service under its own name."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "AI provider"
-        },
-        {
-          "@language": "fr",
-          "@value": "fournisseur de systèmes d'IA"
-        },
-        {
-          "@language": "de",
-          "@value": "Anbieter von KI-Systemen"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:ai-deployer"
-      }
-    },
-    {
-      "@id": "cpt:data-protection-by-design",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32016R0679"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:altLabel": {
-        "@language": "en",
-        "@value": "Privacy by design"
-      },
-      "skos:broadMatch": {
-        "@id": "http://eurovoc.europa.eu/2828"
-      },
-      "skos:broader": {
-        "@id": "cpt:data-protection"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Building data protection measures into systems and processes from the start and by default."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Data protection by design"
-        },
-        {
-          "@language": "fr",
-          "@value": "protection des données dès la conception"
-        },
-        {
-          "@language": "de",
-          "@value": "Datenschutz durch Technikgestaltung"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:conformity-assessment",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32024R1689"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:ai-governance"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A process that shows whether a product or system meets the requirements that apply to it."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Conformity assessment"
-        },
-        {
-          "@language": "fr",
-          "@value": "évaluation de la conformité"
-        },
-        {
-          "@language": "de",
-          "@value": "Konformitätsbewertung"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:high-risk-ai-system"
-      }
-    },
-    {
-      "@id": "cpt:ai-deployer",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32024R1689"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:ai-governance"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A party that uses an AI system under its own authority, except for personal non-professional use."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "AI deployer"
-        },
-        {
-          "@language": "fr",
-          "@value": "déployeur de systèmes d'IA"
-        },
-        {
-          "@language": "de",
-          "@value": "Betreiber von KI-Systemen"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:ai-provider"
-      }
-    },
-    {
-      "@id": "cpt:high-risk-ai-system",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32024R1689"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:ai-system"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "An AI system in a category that the AI Act subjects to strict requirements because of risks to health, safety or fundamental rights."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "High-risk AI system"
-        },
-        {
-          "@language": "fr",
-          "@value": "système d'IA à haut risque"
-        },
-        {
-          "@language": "de",
-          "@value": "Hochrisiko-KI-System"
-        }
-      ],
-      "skos:related": [
-        {
-          "@id": "cpt:conformity-assessment"
-        },
-        {
-          "@id": "cpt:human-oversight"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:linked-data",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "https://www.w3.org/DesignIssues/LinkedData.html"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:altLabel": {
-        "@language": "en",
-        "@value": "Linked Open Data"
-      },
-      "skos:broader": {
-        "@id": "cpt:data-quality-and-metadata"
-      },
-      "skos:closeMatch": {
-        "@id": "http://eurovoc.europa.eu/c_a17a2156"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A method of publishing structured data on the web with URIs and RDF so that datasets can be linked to each other."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Linked data"
-        },
-        {
-          "@language": "fr",
-          "@value": "données liées"
-        },
-        {
-          "@language": "de",
-          "@value": "verknüpfte Daten"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:persistent-identifier"
-      }
-    },
-    {
-      "@id": "cpt:data-quality-and-metadata",
-      "@type": "skos:Concept",
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Practices and standards that keep data accurate, well described and easy to find, understand and combine."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:narrower": [
-        {
-          "@id": "cpt:data-quality"
-        },
-        {
-          "@id": "cpt:metadata"
-        },
-        {
-          "@id": "cpt:controlled-vocabulary"
-        },
-        {
-          "@id": "cpt:ontology"
-        },
-        {
-          "@id": "cpt:linked-data"
-        },
-        {
-          "@id": "cpt:persistent-identifier"
-        },
-        {
-          "@id": "cpt:interoperability"
-        },
-        {
-          "@id": "cpt:data-standard"
-        },
-        {
-          "@id": "cpt:reference-data"
-        },
-        {
-          "@id": "cpt:fair-principles"
-        }
-      ],
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Data quality and metadata"
-        },
-        {
-          "@language": "fr",
-          "@value": "qualité des données et métadonnées"
-        },
-        {
-          "@language": "de",
-          "@value": "Datenqualität und Metadaten"
-        }
-      ],
-      "skos:topConceptOf": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      }
     },
     {
       "@id": "cpt:right-to-erasure",
@@ -2094,49 +1766,7 @@
       ]
     },
     {
-      "@id": "cpt:open-license",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32019L1024"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:altLabel": {
-        "@language": "en",
-        "@value": "Open licence"
-      },
-      "skos:broader": {
-        "@id": "cpt:open-data-and-reuse"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A license that allows data to be freely re-used, with at most minimal conditions such as attribution."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Open license"
-        },
-        {
-          "@language": "fr",
-          "@value": "licence ouverte"
-        },
-        {
-          "@language": "de",
-          "@value": "offene Lizenz"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:open-data"
-      }
-    },
-    {
-      "@id": "cpt:reference-data",
+      "@id": "cpt:controlled-vocabulary",
       "@type": "skos:Concept",
       "lab:pendingReview": [
         "fr",
@@ -2147,316 +1777,26 @@
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "Shared lists of values, such as country codes or code lists, that are used to classify other data."
+        "@value": "An agreed list of terms used to describe things in a consistent way."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
       },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Reference data"
-        },
-        {
-          "@language": "fr",
-          "@value": "données de référence"
-        },
-        {
-          "@language": "de",
-          "@value": "Referenzdaten"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:data-standard"
-      }
-    },
-    {
-      "@id": "cpt:data-portability",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32016R0679"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:data-subject"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "The right of a person to receive their personal data in a structured, commonly used and machine-readable format and to pass it to another controller."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      "skos:narrower": {
+        "@id": "cpt:thesaurus"
       },
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Data portability"
+          "@value": "Controlled vocabulary"
         },
         {
           "@language": "fr",
-          "@value": "portabilité des données"
+          "@value": "vocabulaire contrôlé"
         },
         {
           "@language": "de",
-          "@value": "Datenübertragbarkeit"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:open-data-portal",
-      "@type": "skos:Concept",
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:open-data-and-reuse"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A web site where public bodies publish and describe datasets so that people can find and download them."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Open data portal"
-        },
-        {
-          "@language": "fr",
-          "@value": "portail de données ouvertes"
-        },
-        {
-          "@language": "de",
-          "@value": "Portal für offene Daten"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:data-catalog"
-      }
-    },
-    {
-      "@id": "cpt:connected-product",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32023R2854"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:data-governance"
-      },
-      "skos:closeMatch": {
-        "@id": "http://eurovoc.europa.eu/c_b12a760a"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "An item that obtains, generates or collects data about its use or surroundings and can communicate that data."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Connected product"
-        },
-        {
-          "@language": "fr",
-          "@value": "produit connecté"
-        },
-        {
-          "@language": "de",
-          "@value": "vernetztes Produkt"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:product-with-digital-elements",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32024R2847"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:cybersecurity"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A software or hardware product, together with its remote data processing solutions, that is covered by the cybersecurity requirements of the Cyber Resilience Act."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Product with digital elements"
-        },
-        {
-          "@language": "fr",
-          "@value": "produit comportant des éléments numériques"
-        },
-        {
-          "@language": "de",
-          "@value": "Produkt mit digitalen Elementen"
-        }
-      ]
-    },
-    {
-      "@id": "cpt:data-user",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32022R0868"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:data-sharing"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A party that has lawful access to data and may use it for commercial or non-commercial purposes."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Data user"
-        },
-        {
-          "@language": "fr",
-          "@value": "utilisateur de données"
-        },
-        {
-          "@language": "de",
-          "@value": "Datennutzer"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:data-holder"
-      }
-    },
-    {
-      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance",
-      "@type": "skos:ConceptScheme",
-      "dct:creator": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori"
-      },
-      "dct:description": {
-        "@language": "en",
-        "@value": "A small multilingual thesaurus (English, French, German) on EU data and AI governance: data protection, data governance, AI governance, open data and reuse, digital resilience, and data quality and metadata."
-      },
-      "dct:issued": {
-        "@type": "xsd:date",
-        "@value": "2026-11-03"
-      },
-      "dct:language": [
-        {
-          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
-        },
-        {
-          "@id": "http://publications.europa.eu/resource/authority/language/FRA"
-        },
-        {
-          "@id": "http://publications.europa.eu/resource/authority/language/DEU"
-        }
-      ],
-      "dct:license": {
-        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
-      },
-      "dct:title": {
-        "@language": "en",
-        "@value": "EU Data Governance Thesaurus"
-      },
-      "owl:versionInfo": "1.0.0",
-      "skos:hasTopConcept": [
-        {
-          "@id": "cpt:data-protection"
-        },
-        {
-          "@id": "cpt:data-governance"
-        },
-        {
-          "@id": "cpt:ai-governance"
-        },
-        {
-          "@id": "cpt:open-data-and-reuse"
-        },
-        {
-          "@id": "cpt:digital-resilience"
-        },
-        {
-          "@id": "cpt:data-quality-and-metadata"
-        }
-      ],
-      "skos:scopeNote": {
-        "@language": "en",
-        "@value": "Definitions are written in English. French and German labels are marked pending review unless they come from EuroVoc."
-      }
-    },
-    {
-      "@id": "cpt:data-sharing",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32022R0868"
-      },
-      "skos:broader": {
-        "@id": "cpt:data-governance"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "Making data available to other parties for use under agreed conditions."
-      },
-      "skos:exactMatch": {
-        "@id": "http://eurovoc.europa.eu/c_eaccd9f4"
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:narrower": [
-        {
-          "@id": "cpt:data-holder"
-        },
-        {
-          "@id": "cpt:data-user"
-        },
-        {
-          "@id": "cpt:data-intermediation-service"
-        },
-        {
-          "@id": "cpt:data-altruism"
-        },
-        {
-          "@id": "cpt:common-european-data-space"
-        }
-      ],
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Data sharing"
-        },
-        {
-          "@language": "fr",
-          "@value": "partage de données"
-        },
-        {
-          "@language": "de",
-          "@value": "Datenaustausch"
+          "@value": "kontrolliertes Vokabular"
         }
       ]
     },
@@ -2504,17 +1844,25 @@
       ]
     },
     {
-      "@id": "cpt:data-quality",
+      "@id": "cpt:data-controller",
       "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32016R0679"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Controller"
+      },
       "skos:broader": {
-        "@id": "cpt:data-quality-and-metadata"
+        "@id": "cpt:data-protection"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "The degree to which data is accurate, complete, consistent, timely and fit for its intended use."
-      },
-      "skos:exactMatch": {
-        "@id": "http://eurovoc.europa.eu/66901"
+        "@value": "The party that decides why and how personal data is processed."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -2522,17 +1870,138 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Data quality"
+          "@value": "Data controller"
         },
         {
           "@language": "fr",
-          "@value": "qualité des données"
+          "@value": "responsable du traitement"
         },
         {
           "@language": "de",
-          "@value": "Datenqualität"
+          "@value": "Verantwortlicher"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:data-processor"
+      }
+    },
+    {
+      "@id": "cpt:data-protection-by-design",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32016R0679"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Privacy by design"
+      },
+      "skos:broadMatch": {
+        "@id": "http://eurovoc.europa.eu/2828"
+      },
+      "skos:broader": {
+        "@id": "cpt:data-protection"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Building data protection measures into systems and processes from the start and by default."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data protection by design"
+        },
+        {
+          "@language": "fr",
+          "@value": "protection des données dès la conception"
+        },
+        {
+          "@language": "de",
+          "@value": "Datenschutz durch Technikgestaltung"
         }
       ]
+    },
+    {
+      "@id": "cpt:essential-entity",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32022L2555"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:digital-resilience"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A type of organization in sectors of high criticality that is subject to the full supervisory regime of the NIS2 Directive."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Essential entity"
+        },
+        {
+          "@language": "fr",
+          "@value": "entité essentielle"
+        },
+        {
+          "@language": "de",
+          "@value": "wesentliche Einrichtung"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:important-entity"
+      }
+    },
+    {
+      "@id": "cpt:ai-provider",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32024R1689"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:ai-governance"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A party that develops an AI system, or has it developed, and places it on the market or puts it into service under its own name."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "AI provider"
+        },
+        {
+          "@language": "fr",
+          "@value": "fournisseur de systèmes d'IA"
+        },
+        {
+          "@language": "de",
+          "@value": "Anbieter von KI-Systemen"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:ai-deployer"
+      }
     },
     {
       "@id": "cpt:data-catalog",
@@ -2573,49 +2042,8 @@
       }
     },
     {
-      "@id": "cpt:machine-readable-format",
+      "@id": "cpt:reference-data",
       "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "act:32019L1024"
-      },
-      "lab:pendingReview": [
-        "fr",
-        "de"
-      ],
-      "skos:broader": {
-        "@id": "cpt:open-data-and-reuse"
-      },
-      "skos:definition": {
-        "@language": "en",
-        "@value": "A file format structured so that software can easily identify, recognize and extract specific data from it."
-      },
-      "skos:inScheme": {
-        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
-      },
-      "skos:prefLabel": [
-        {
-          "@language": "en",
-          "@value": "Machine-readable format"
-        },
-        {
-          "@language": "fr",
-          "@value": "format lisible par machine"
-        },
-        {
-          "@language": "de",
-          "@value": "maschinenlesbares Format"
-        }
-      ],
-      "skos:related": {
-        "@id": "cpt:open-data"
-      }
-    },
-    {
-      "@id": "cpt:fair-principles",
-      "@type": "skos:Concept",
-      "dct:source": {
-        "@id": "https://doi.org/10.1038/sdata.2016.18"
-      },
       "lab:pendingReview": [
         "fr",
         "de"
@@ -2625,7 +2053,7 @@
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "Guiding principles for making data findable, accessible, interoperable and reusable."
+        "@value": "Shared lists of values, such as country codes or code lists, that are used to classify other data."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -2633,26 +2061,26 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "FAIR principles"
+          "@value": "Reference data"
         },
         {
           "@language": "fr",
-          "@value": "principes FAIR"
+          "@value": "données de référence"
         },
         {
           "@language": "de",
-          "@value": "FAIR-Prinzipien"
+          "@value": "Referenzdaten"
         }
       ],
       "skos:related": {
-        "@id": "cpt:metadata"
+        "@id": "cpt:data-standard"
       }
     },
     {
-      "@id": "cpt:international-data-transfer",
+      "@id": "cpt:application-programming-interface",
       "@type": "skos:Concept",
       "dct:source": {
-        "@id": "act:32016R0679"
+        "@id": "act:32019L1024"
       },
       "lab:pendingReview": [
         "fr",
@@ -2660,17 +2088,14 @@
       ],
       "skos:altLabel": {
         "@language": "en",
-        "@value": "Transfer to third countries"
-      },
-      "skos:broadMatch": {
-        "@id": "http://eurovoc.europa.eu/4502"
+        "@value": "API"
       },
       "skos:broader": {
-        "@id": "cpt:data-protection"
+        "@id": "cpt:open-data-and-reuse"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "The transfer of personal data to a country outside the European Economic Area or to an international organization, which requires safeguards."
+        "@value": "A set of functions and rules that lets software request data or services from another system."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -2678,17 +2103,282 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "International data transfer"
+          "@value": "Application programming interface"
         },
         {
           "@language": "fr",
-          "@value": "transfert international de données"
+          "@value": "interface de programmation d'applications"
         },
         {
           "@language": "de",
-          "@value": "internationale Datenübermittlung"
+          "@value": "Anwendungsprogrammierschnittstelle"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:high-value-dataset"
+      }
+    },
+    {
+      "@id": "cpt:thesaurus",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "cpt:controlled-vocabulary"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A controlled vocabulary whose terms are linked by relationships such as broader, narrower and related."
+      },
+      "skos:exactMatch": {
+        "@id": "http://eurovoc.europa.eu/4138"
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Thesaurus"
+        },
+        {
+          "@language": "fr",
+          "@value": "thésaurus"
+        },
+        {
+          "@language": "de",
+          "@value": "Thesaurus"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:ontology"
+      }
+    },
+    {
+      "@id": "cpt:public-sector-information",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32019L1024"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "PSI"
+      },
+      "skos:broader": {
+        "@id": "cpt:open-data-and-reuse"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Documents and data held by public sector bodies, often made available for re-use."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Public sector information"
+        },
+        {
+          "@language": "fr",
+          "@value": "informations du secteur public"
+        },
+        {
+          "@language": "de",
+          "@value": "Informationen des öffentlichen Sektors"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:re-use-of-documents"
+      }
+    },
+    {
+      "@id": "cpt:data-user",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32022R0868"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:data-sharing"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A party that has lawful access to data and may use it for commercial or non-commercial purposes."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data user"
+        },
+        {
+          "@language": "fr",
+          "@value": "utilisateur de données"
+        },
+        {
+          "@language": "de",
+          "@value": "Datennutzer"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:data-holder"
+      }
+    },
+    {
+      "@id": "cpt:important-entity",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32022L2555"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:digital-resilience"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A type of organization in listed sectors that is subject to a lighter supervisory regime than essential entities under the NIS2 Directive."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Important entity"
+        },
+        {
+          "@language": "fr",
+          "@value": "entité importante"
+        },
+        {
+          "@language": "de",
+          "@value": "wichtige Einrichtung"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:essential-entity"
+      }
+    },
+    {
+      "@id": "cpt:data-standard",
+      "@type": "skos:Concept",
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broadMatch": {
+        "@id": "http://eurovoc.europa.eu/2077"
+      },
+      "skos:broader": {
+        "@id": "cpt:data-quality-and-metadata"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "An agreed specification for how data is structured, formatted or exchanged."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Data standard"
+        },
+        {
+          "@language": "fr",
+          "@value": "norme de données"
+        },
+        {
+          "@language": "de",
+          "@value": "Datenstandard"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "cpt:interoperability"
+        },
+        {
+          "@id": "cpt:reference-data"
         }
       ]
+    },
+    {
+      "@id": "cpt:ai-governance",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32024R1689"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The rules, processes and oversight that guide how AI systems are developed, placed on the market and used."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:narrower": [
+        {
+          "@id": "cpt:ai-system"
+        },
+        {
+          "@id": "cpt:general-purpose-ai-model"
+        },
+        {
+          "@id": "cpt:prohibited-ai-practice"
+        },
+        {
+          "@id": "cpt:risk-based-approach"
+        },
+        {
+          "@id": "cpt:ai-provider"
+        },
+        {
+          "@id": "cpt:ai-deployer"
+        },
+        {
+          "@id": "cpt:conformity-assessment"
+        },
+        {
+          "@id": "cpt:transparency-obligation"
+        },
+        {
+          "@id": "cpt:human-oversight"
+        },
+        {
+          "@id": "cpt:ai-regulatory-sandbox"
+        }
+      ],
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "AI governance"
+        },
+        {
+          "@language": "fr",
+          "@value": "gouvernance de l'intelligence artificielle"
+        },
+        {
+          "@language": "de",
+          "@value": "KI-Governance"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      }
     },
     {
       "@id": "cpt:transparency-obligation",
@@ -2770,6 +2460,242 @@
       }
     },
     {
+      "@id": "cpt:high-risk-ai-system",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32024R1689"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:ai-system"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "An AI system in a category that the AI Act subjects to strict requirements because of risks to health, safety or fundamental rights."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "High-risk AI system"
+        },
+        {
+          "@language": "fr",
+          "@value": "système d'IA à haut risque"
+        },
+        {
+          "@language": "de",
+          "@value": "Hochrisiko-KI-System"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "cpt:conformity-assessment"
+        },
+        {
+          "@id": "cpt:human-oversight"
+        }
+      ]
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance",
+      "@type": "skos:ConceptScheme",
+      "dct:creator": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori"
+      },
+      "dct:description": {
+        "@language": "en",
+        "@value": "A small multilingual thesaurus (English, French, German) on EU data and AI governance: data protection, data governance, AI governance, open data and reuse, digital resilience, and data quality and metadata."
+      },
+      "dct:issued": {
+        "@type": "xsd:date",
+        "@value": "2026-11-03"
+      },
+      "dct:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/FRA"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Data Governance Thesaurus"
+      },
+      "owl:versionInfo": "1.0.0",
+      "skos:hasTopConcept": [
+        {
+          "@id": "cpt:data-protection"
+        },
+        {
+          "@id": "cpt:data-governance"
+        },
+        {
+          "@id": "cpt:ai-governance"
+        },
+        {
+          "@id": "cpt:open-data-and-reuse"
+        },
+        {
+          "@id": "cpt:digital-resilience"
+        },
+        {
+          "@id": "cpt:data-quality-and-metadata"
+        }
+      ],
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Definitions are written in English. French and German labels are marked pending review unless they come from EuroVoc."
+      }
+    },
+    {
+      "@id": "cpt:digital-resilience",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32022R2554"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The ability of organizations and systems to withstand, respond to and recover from disruptions of digital technology."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:narrower": [
+        {
+          "@id": "cpt:cybersecurity"
+        },
+        {
+          "@id": "cpt:ict-risk-management"
+        },
+        {
+          "@id": "cpt:ict-incident"
+        },
+        {
+          "@id": "cpt:digital-operational-resilience-testing"
+        },
+        {
+          "@id": "cpt:essential-entity"
+        },
+        {
+          "@id": "cpt:important-entity"
+        }
+      ],
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Digital resilience"
+        },
+        {
+          "@language": "fr",
+          "@value": "résilience numérique"
+        },
+        {
+          "@language": "de",
+          "@value": "digitale Resilienz"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori",
+      "@type": "foaf:Person",
+      "foaf:name": "Reza Tashakkori"
+    },
+    {
+      "@id": "cpt:metadata",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "cpt:data-quality-and-metadata"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Data that describes other data, such as its origin, meaning, format and conditions of use."
+      },
+      "skos:exactMatch": {
+        "@id": "http://eurovoc.europa.eu/c_40f54e0c"
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:narrower": {
+        "@id": "cpt:data-catalog"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Metadata"
+        },
+        {
+          "@language": "fr",
+          "@value": "métadonnée"
+        },
+        {
+          "@language": "de",
+          "@value": "Metadaten"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:fair-principles"
+      }
+    },
+    {
+      "@id": "cpt:digital-operational-resilience-testing",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32022R2554"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:digital-resilience"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Tests, such as vulnerability scans and threat-led penetration tests, that check whether ICT systems can withstand disruption."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Digital operational resilience testing"
+        },
+        {
+          "@language": "fr",
+          "@value": "tests de résilience opérationnelle numérique"
+        },
+        {
+          "@language": "de",
+          "@value": "Testen der digitalen operationalen Resilienz"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:ict-risk-management"
+      }
+    },
+    {
       "@id": "cpt:personal-data",
       "@type": "skos:Concept",
       "dct:source": {
@@ -2810,26 +2736,21 @@
       }
     },
     {
-      "@id": "cpt:incident-reporting",
+      "@id": "cpt:ai-deployer",
       "@type": "skos:Concept",
-      "dct:source": [
-        {
-          "@id": "act:32022R2554"
-        },
-        {
-          "@id": "act:32022L2555"
-        }
-      ],
+      "dct:source": {
+        "@id": "act:32024R1689"
+      },
       "lab:pendingReview": [
         "fr",
         "de"
       ],
       "skos:broader": {
-        "@id": "cpt:ict-incident"
+        "@id": "cpt:ai-governance"
       },
       "skos:definition": {
         "@language": "en",
-        "@value": "The duty to notify competent authorities, and sometimes affected parties, of significant incidents within set deadlines."
+        "@value": "A party that uses an AI system under its own authority, except for personal non-professional use."
       },
       "skos:inScheme": {
         "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
@@ -2837,17 +2758,96 @@
       "skos:prefLabel": [
         {
           "@language": "en",
-          "@value": "Incident reporting"
+          "@value": "AI deployer"
         },
         {
           "@language": "fr",
-          "@value": "notification d'incident"
+          "@value": "déployeur de systèmes d'IA"
         },
         {
           "@language": "de",
-          "@value": "Meldung von Vorfällen"
+          "@value": "Betreiber von KI-Systemen"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:ai-provider"
+      }
+    },
+    {
+      "@id": "cpt:connected-product",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32023R2854"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:data-governance"
+      },
+      "skos:closeMatch": {
+        "@id": "http://eurovoc.europa.eu/c_b12a760a"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "An item that obtains, generates or collects data about its use or surroundings and can communicate that data."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Connected product"
+        },
+        {
+          "@language": "fr",
+          "@value": "produit connecté"
+        },
+        {
+          "@language": "de",
+          "@value": "vernetztes Produkt"
         }
       ]
+    },
+    {
+      "@id": "cpt:machine-readable-format",
+      "@type": "skos:Concept",
+      "dct:source": {
+        "@id": "act:32019L1024"
+      },
+      "lab:pendingReview": [
+        "fr",
+        "de"
+      ],
+      "skos:broader": {
+        "@id": "cpt:open-data-and-reuse"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A file format structured so that software can easily identify, recognize and extract specific data from it."
+      },
+      "skos:inScheme": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Machine-readable format"
+        },
+        {
+          "@language": "fr",
+          "@value": "format lisible par machine"
+        },
+        {
+          "@language": "de",
+          "@value": "maschinenlesbares Format"
+        }
+      ],
+      "skos:related": {
+        "@id": "cpt:open-data"
+      }
     }
   ]
 }

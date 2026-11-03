@@ -240,4 +240,4 @@ def test_row_limit_marks_result_as_truncated(graph):
 
 def test_query_files_do_not_use_forbidden_dashes(queries):
     for q in queries.values():
-        assert not re.search(r"[–—]|--", q.text), q.path.name
+        assert not re.search(f"[{chr(0x2013)}{chr(0x2014)}]|--", q.text), q.path.name

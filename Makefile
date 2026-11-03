@@ -3,10 +3,11 @@
 
 PYTHON ?= python
 
-.PHONY: setup lint test validate docs app all
+.PHONY: setup lint test validate build docs app all
 
+# Install the project with the app and documentation extras, and the git hook.
 setup:
-	$(PYTHON) -m pip install -e ".[dev]"
+	$(PYTHON) -m pip install -e ".[dev,app,docs]"
 	$(PYTHON) -m pre_commit install
 
 lint:
@@ -16,14 +17,21 @@ lint:
 test:
 	$(PYTHON) -m pytest
 
-# The next three targets are filled in during later phases.
+# SHACL validation of the real data, plus a check that data/dist matches the Turtle files.
 validate:
-	@echo "validate: SHACL validation is added in Phase 5."
+	$(PYTHON) -m semlab validate
+	$(PYTHON) -m semlab check-dist
 
+# Regenerate JSON-LD and RDF/XML in data/dist from the Turtle sources.
+build:
+	$(PYTHON) -m semlab build
+
+# Regenerate the ontology documentation page and the translation review list.
 docs:
-	@echo "docs: ontology documentation is added in Phase 7."
+	$(PYTHON) -m pylode data/ontology/legal-acts.ttl -o docs/ontology.html
+	$(PYTHON) -m semlab translations
 
 app:
-	@echo "app: the Streamlit app is added in Phase 6."
+	$(PYTHON) -m streamlit run app/streamlit_app.py
 
 all: lint test validate

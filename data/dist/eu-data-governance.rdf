@@ -7,152 +7,80 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data">
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/re-use-of-documents">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Personal data</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">données personnelles</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">persönliche Daten</skos:prefLabel>
-    <skos:definition xml:lang="en">Any information relating to an identified or identifiable natural person.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/special-categories-of-personal-data"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-subject"/>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/5595"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/interoperability">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Interoperability</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">interopérabilité</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Interoperabilität</skos:prefLabel>
-    <skos:definition xml:lang="en">The ability of different organizations and systems to exchange data and to use the data they receive.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/common-european-data-space"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-standard"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R0903"/>
+    <skos:prefLabel xml:lang="en">Re-use of documents</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">réutilisation de documents</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Weiterverwendung von Dokumenten</skos:prefLabel>
+    <skos:definition xml:lang="en">Use of documents held by public sector bodies for commercial or non-commercial purposes other than their original public task.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/public-sector-information"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
     <lab:pendingReview>fr</lab:pendingReview>
     <lab:pendingReview>de</lab:pendingReview>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/prohibited-ai-practice">
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-operational-resilience-testing">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Prohibited AI practice</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">pratique d'IA interdite</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">verbotene KI-Praktik</skos:prefLabel>
-    <skos:definition xml:lang="en">A use of AI that the AI Act bans outright because it is seen as an unacceptable risk.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/risk-based-approach"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-intermediation-service">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data intermediation service</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">service d'intermédiation de données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Datenvermittlungsdienst</skos:prefLabel>
-    <skos:definition xml:lang="en">A service that sets up commercial relationships between data holders and data users by technical, legal or other means.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-risk-management">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">ICT risk management</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">gestion du risque lié aux TIC</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">IKT-Risikomanagement</skos:prefLabel>
-    <skos:definition xml:lang="en">The frameworks, policies and controls used to identify, assess and reduce risks from information and communication technology.</skos:definition>
+    <skos:prefLabel xml:lang="en">Digital operational resilience testing</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">tests de résilience opérationnelle numérique</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Testen der digitalen operationalen Resilienz</skos:prefLabel>
+    <skos:definition xml:lang="en">Tests, such as vulnerability scans and threat-led penetration tests, that check whether ICT systems can withstand disruption.</skos:definition>
     <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-third-party-risk"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/cybersecurity"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-operational-resilience-testing"/>
-    <skos:broadMatch rdf:resource="http://eurovoc.europa.eu/c_406ad4cc"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-risk-management"/>
     <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554"/>
     <lab:pendingReview>fr</lab:pendingReview>
     <lab:pendingReview>de</lab:pendingReview>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-user">
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/thesaurus">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data user</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">utilisateur de données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Datennutzer</skos:prefLabel>
-    <skos:definition xml:lang="en">A party that has lawful access to data and may use it for commercial or non-commercial purposes.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-holder"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
+    <skos:prefLabel xml:lang="en">Thesaurus</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">thésaurus</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Thesaurus</skos:prefLabel>
+    <skos:definition xml:lang="en">A controlled vocabulary whose terms are linked by relationships such as broader, narrower and related.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/controlled-vocabulary"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ontology"/>
+    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/4138"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/international-data-transfer">
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-system">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">International data transfer</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">transfert international de données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">internationale Datenübermittlung</skos:prefLabel>
-    <skos:altLabel xml:lang="en">Transfer to third countries</skos:altLabel>
-    <skos:definition xml:lang="en">The transfer of personal data to a country outside the European Economic Area or to an international organization, which requires safeguards.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <skos:broadMatch rdf:resource="http://eurovoc.europa.eu/4502"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-processing-service">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data processing service</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">service de traitement de données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Datenverarbeitungsdienst</skos:prefLabel>
-    <skos:definition xml:lang="en">A digital service, such as a cloud service, that gives on-demand network access to a shared pool of configurable computing resources.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance"/>
-    <skos:broadMatch rdf:resource="http://eurovoc.europa.eu/c_433922a6"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32023R2854"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-subject">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data subject</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">personne concernée</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">betroffene Person</skos:prefLabel>
-    <skos:definition xml:lang="en">An identified or identifiable natural person whose personal data is processed.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/right-to-erasure"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-portability"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-deployer">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">AI deployer</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">déployeur de systèmes d'IA</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Betreiber von KI-Systemen</skos:prefLabel>
-    <skos:definition xml:lang="en">A party that uses an AI system under its own authority, except for personal non-professional use.</skos:definition>
+    <skos:prefLabel xml:lang="en">AI system</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">système d'IA</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">KI-System</skos:prefLabel>
+    <skos:definition xml:lang="en">A machine-based system that infers from its inputs how to generate outputs such as predictions, content, recommendations or decisions.</skos:definition>
     <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-provider"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-risk-ai-system"/>
+    <skos:closeMatch rdf:resource="http://eurovoc.europa.eu/3030"/>
     <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
     <lab:pendingReview>fr</lab:pendingReview>
     <lab:pendingReview>de</lab:pendingReview>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/machine-readable-format">
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-risk-ai-system">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Machine-readable format</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">format lisible par machine</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">maschinenlesbares Format</skos:prefLabel>
-    <skos:definition xml:lang="en">A file format structured so that software can easily identify, recognize and extract specific data from it.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
+    <skos:prefLabel xml:lang="en">High-risk AI system</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">système d'IA à haut risque</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Hochrisiko-KI-System</skos:prefLabel>
+    <skos:definition xml:lang="en">An AI system in a category that the AI Act subjects to strict requirements because of risks to health, safety or fundamental rights.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-system"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/conformity-assessment"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/human-oversight"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/reference-data">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Reference data</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">données de référence</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Referenzdaten</skos:prefLabel>
+    <skos:definition xml:lang="en">Shared lists of values, such as country codes or code lists, that are used to classify other data.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-standard"/>
     <lab:pendingReview>fr</lab:pendingReview>
     <lab:pendingReview>de</lab:pendingReview>
   </rdf:Description>
@@ -178,6 +106,699 @@
     <lab:pendingReview>fr</lab:pendingReview>
     <lab:pendingReview>de</lab:pendingReview>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:topConceptOf rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Open data and reuse</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">données ouvertes et réutilisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">offene Daten und Weiterverwendung</skos:prefLabel>
+    <skos:definition xml:lang="en">Making public sector data available in open formats and under open conditions so that anyone can re-use it.</skos:definition>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/public-sector-information"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/re-use-of-documents"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/machine-readable-format"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/application-programming-interface"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-license"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-portal"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-value-dataset">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">High-value dataset</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">série de données de forte valeur</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">hochwertiger Datensatz</skos:prefLabel>
+    <skos:definition xml:lang="en">A dataset whose re-use brings important benefits for society, the environment and the economy, and for which special availability rules apply.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/application-programming-interface"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32023R0138"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/machine-readable-format">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Machine-readable format</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">format lisible par machine</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">maschinenlesbares Format</skos:prefLabel>
+    <skos:definition xml:lang="en">A file format structured so that software can easily identify, recognize and extract specific data from it.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/incident-reporting">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Incident reporting</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">notification d'incident</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Meldung von Vorfällen</skos:prefLabel>
+    <skos:definition xml:lang="en">The duty to notify competent authorities, and sometimes affected parties, of significant incidents within set deadlines.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-incident"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022L2555"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-license">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Open license</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">licence ouverte</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">offene Lizenz</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Open licence</skos:altLabel>
+    <skos:definition xml:lang="en">A license that allows data to be freely re-used, with at most minimal conditions such as attribution.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/pseudonymization">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Pseudonymization</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">pseudonymisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Pseudonymisierung</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Pseudonymisation</skos:altLabel>
+    <skos:definition xml:lang="en">Processing personal data so that it can no longer be attributed to a person without additional information that is kept separately.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/anonymization"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-intermediation-service">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data intermediation service</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">service d'intermédiation de données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Datenvermittlungsdienst</skos:prefLabel>
+    <skos:definition xml:lang="en">A service that sets up commercial relationships between data holders and data users by technical, legal or other means.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-subject">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data subject</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">personne concernée</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">betroffene Person</skos:prefLabel>
+    <skos:definition xml:lang="en">An identified or identifiable natural person whose personal data is processed.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/right-to-erasure"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-portability"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/interoperability">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Interoperability</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">interopérabilité</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Interoperabilität</skos:prefLabel>
+    <skos:definition xml:lang="en">The ability of different organizations and systems to exchange data and to use the data they receive.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/common-european-data-space"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-standard"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R0903"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-altruism">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data altruism</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">altruisme en matière de données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Datenaltruismus</skos:prefLabel>
+    <skos:definition xml:lang="en">The voluntary sharing of data, based on consent or permission, for purposes of general interest and without seeking a reward.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/controlled-vocabulary">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Controlled vocabulary</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">vocabulaire contrôlé</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">kontrolliertes Vokabular</skos:prefLabel>
+    <skos:definition xml:lang="en">An agreed list of terms used to describe things in a consistent way.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/thesaurus"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/consent">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Consent</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">consentement</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einwilligung</skos:prefLabel>
+    <skos:definition xml:lang="en">A freely given, specific, informed and unambiguous indication of a person's wishes that they agree to the processing of their personal data.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-deployer">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">AI deployer</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">déployeur de systèmes d'IA</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Betreiber von KI-Systemen</skos:prefLabel>
+    <skos:definition xml:lang="en">A party that uses an AI system under its own authority, except for personal non-professional use.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-provider"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dct:title xml:lang="en">EU Data Governance Thesaurus</dct:title>
+    <dct:description xml:lang="en">A small multilingual thesaurus (English, French, German) on EU data and AI governance: data protection, data governance, AI governance, open data and reuse, digital resilience, and data quality and metadata.</dct:description>
+    <dct:creator rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</dct:issued>
+    <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"/>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA"/>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU"/>
+    <owl:versionInfo>1.0.0</owl:versionInfo>
+    <skos:scopeNote xml:lang="en">Definitions are written in English. French and German labels are marked pending review unless they come from EuroVoc.</skos:scopeNote>
+    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance"/>
+    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
+    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
+    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
+    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/human-oversight">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Human oversight</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">contrôle humain</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">menschliche Aufsicht</skos:prefLabel>
+    <skos:definition xml:lang="en">Measures that let people monitor, understand and, where needed, intervene in the operation of a high-risk AI system.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-risk-ai-system"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/linked-data">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Linked data</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">données liées</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">verknüpfte Daten</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Linked Open Data</skos:altLabel>
+    <skos:definition xml:lang="en">A method of publishing structured data on the web with URIs and RDF so that datasets can be linked to each other.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/persistent-identifier"/>
+    <skos:closeMatch rdf:resource="http://eurovoc.europa.eu/c_a17a2156"/>
+    <dct:source rdf:resource="https://www.w3.org/DesignIssues/LinkedData.html"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data-breach">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Personal data breach</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">violation de données à caractère personnel</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Verletzung des Schutzes personenbezogener Daten</skos:prefLabel>
+    <skos:definition xml:lang="en">A security incident that leads to the accidental or unlawful destruction, loss, alteration, disclosure of or access to personal data.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-catalog">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data catalog</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">catalogue de données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Datenkatalog</skos:prefLabel>
+    <skos:definition xml:lang="en">A curated collection of metadata descriptions of datasets that helps people find and understand data.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/metadata"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-portal"/>
+    <dct:source rdf:resource="https://www.w3.org/TR/vocab-dcat-3/"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/right-to-erasure">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Right to erasure</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">droit à l'effacement</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Recht auf Löschung</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Right to be forgotten</skos:altLabel>
+    <skos:definition xml:lang="en">The right of a person to have their personal data deleted under certain conditions.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-subject"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-regulatory-sandbox">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">AI regulatory sandbox</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">bac à sable réglementaire de l'IA</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">KI-Reallabor</skos:prefLabel>
+    <skos:definition xml:lang="en">A controlled framework in which AI systems can be developed and tested under regulatory supervision before they are placed on the market.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/connected-product">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Connected product</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">produit connecté</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">vernetztes Produkt</skos:prefLabel>
+    <skos:definition xml:lang="en">An item that obtains, generates or collects data about its use or surroundings and can communicate that data.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance"/>
+    <skos:closeMatch rdf:resource="http://eurovoc.europa.eu/c_b12a760a"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32023R2854"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Open data</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">données ouvertes</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">offene Daten</skos:prefLabel>
+    <skos:definition xml:lang="en">Data that anyone can freely access, use and share, subject at most to conditions such as attribution.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-value-dataset"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/machine-readable-format"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-license"/>
+    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/c_5ea6e5c4"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/conformity-assessment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Conformity assessment</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">évaluation de la conformité</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Konformitätsbewertung</skos:prefLabel>
+    <skos:definition xml:lang="en">A process that shows whether a product or system meets the requirements that apply to it.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-risk-ai-system"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data sharing</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">partage de données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Datenaustausch</skos:prefLabel>
+    <skos:definition xml:lang="en">Making data available to other parties for use under agreed conditions.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-holder"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-user"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-intermediation-service"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-altruism"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/common-european-data-space"/>
+    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/c_eaccd9f4"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-incident">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">ICT incident</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">incident lié aux TIC</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">IKT-bezogener Vorfall</skos:prefLabel>
+    <skos:definition xml:lang="en">A single event, or a series of linked events, not planned by the organization, that harms the security of network and information systems.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/incident-reporting"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Ontology</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">ontologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ontologie</skos:prefLabel>
+    <skos:definition xml:lang="en">A formal, machine-readable model of the classes, properties and relationships in a domain.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/thesaurus"/>
+    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/c_782eaeb3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-processor">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data processor</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">sous-traitant</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Auftragsverarbeiter</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Processor</skos:altLabel>
+    <skos:definition xml:lang="en">A party that processes personal data on behalf of a controller.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-controller"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/product-with-digital-elements">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Product with digital elements</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">produit comportant des éléments numériques</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Produkt mit digitalen Elementen</skos:prefLabel>
+    <skos:definition xml:lang="en">A software or hardware product, together with its remote data processing solutions, that is covered by the cybersecurity requirements of the Cyber Resilience Act.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/cybersecurity"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R2847"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/anonymization">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Anonymization</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">anonymisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Anonymisierung</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Anonymisation</skos:altLabel>
+    <skos:definition xml:lang="en">Changing data irreversibly so that individuals can no longer be identified.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/pseudonymization"/>
+    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/c_7bb1a021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/international-data-transfer">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">International data transfer</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">transfert international de données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">internationale Datenübermittlung</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Transfer to third countries</skos:altLabel>
+    <skos:definition xml:lang="en">The transfer of personal data to a country outside the European Economic Area or to an international organization, which requires safeguards.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <skos:broadMatch rdf:resource="http://eurovoc.europa.eu/4502"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:topConceptOf rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data quality and metadata</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">qualité des données et métadonnées</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Datenqualität und Metadaten</skos:prefLabel>
+    <skos:definition xml:lang="en">Practices and standards that keep data accurate, well described and easy to find, understand and combine.</skos:definition>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/metadata"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/controlled-vocabulary"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ontology"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/linked-data"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/persistent-identifier"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/interoperability"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-standard"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/reference-data"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/fair-principles"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/fair-principles">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">FAIR principles</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">principes FAIR</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">FAIR-Prinzipien</skos:prefLabel>
+    <skos:definition xml:lang="en">Guiding principles for making data findable, accessible, interoperable and reusable.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/metadata"/>
+    <dct:source rdf:resource="https://doi.org/10.1038/sdata.2016.18"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/transparency-obligation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Transparency obligation</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">obligation de transparence</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Transparenzpflicht</skos:prefLabel>
+    <skos:definition xml:lang="en">A duty to inform people, for example that they are interacting with an AI system or viewing AI-generated content.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/common-european-data-space">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Common European data space</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">espace européen commun de données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">gemeinsamer europäischer Datenraum</skos:prefLabel>
+    <skos:definition xml:lang="en">A sector-specific or cross-sector framework for trusted data sharing in the EU, built on shared rules, standards and infrastructure.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/interoperability"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/application-programming-interface">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Application programming interface</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">interface de programmation d'applications</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Anwendungsprogrammierschnittstelle</skos:prefLabel>
+    <skos:altLabel xml:lang="en">API</skos:altLabel>
+    <skos:definition xml:lang="en">A set of functions and rules that lets software request data or services from another system.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-value-dataset"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data quality</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">qualité des données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Datenqualität</skos:prefLabel>
+    <skos:definition xml:lang="en">The degree to which data is accurate, complete, consistent, timely and fit for its intended use.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
+    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/66901"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/risk-based-approach">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Risk-based approach</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">approche fondée sur les risques</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">risikobasierter Ansatz</skos:prefLabel>
+    <skos:definition xml:lang="en">A regulatory approach in which obligations grow with the level of risk.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/prohibited-ai-practice"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/public-sector-information">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Public sector information</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">informations du secteur public</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Informationen des öffentlichen Sektors</skos:prefLabel>
+    <skos:altLabel xml:lang="en">PSI</skos:altLabel>
+    <skos:definition xml:lang="en">Documents and data held by public sector bodies, often made available for re-use.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/re-use-of-documents"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-holder">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data holder</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">détenteur de données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Dateninhaber</skos:prefLabel>
+    <skos:definition xml:lang="en">A party that has the right or the ability to grant access to, or to share, certain data.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-user"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32023R2854"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/prohibited-ai-practice">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Prohibited AI practice</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">pratique d'IA interdite</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">verbotene KI-Praktik</skos:prefLabel>
+    <skos:definition xml:lang="en">A use of AI that the AI Act bans outright because it is seen as an unacceptable risk.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/risk-based-approach"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-processing-service">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data processing service</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">service de traitement de données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Datenverarbeitungsdienst</skos:prefLabel>
+    <skos:definition xml:lang="en">A digital service, such as a cloud service, that gives on-demand network access to a shared pool of configurable computing resources.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance"/>
+    <skos:broadMatch rdf:resource="http://eurovoc.europa.eu/c_433922a6"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32023R2854"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection-by-design">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data protection by design</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">protection des données dès la conception</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Datenschutz durch Technikgestaltung</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Privacy by design</skos:altLabel>
+    <skos:definition xml:lang="en">Building data protection measures into systems and processes from the start and by default.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <skos:broadMatch rdf:resource="http://eurovoc.europa.eu/2828"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:topConceptOf rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Digital resilience</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">résilience numérique</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">digitale Resilienz</skos:prefLabel>
+    <skos:definition xml:lang="en">The ability of organizations and systems to withstand, respond to and recover from disruptions of digital technology.</skos:definition>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/cybersecurity"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-risk-management"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-incident"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-operational-resilience-testing"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/essential-entity"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/important-entity"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-risk-management">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">ICT risk management</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">gestion du risque lié aux TIC</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">IKT-Risikomanagement</skos:prefLabel>
+    <skos:definition xml:lang="en">The frameworks, policies and controls used to identify, assess and reduce risks from information and communication technology.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-third-party-risk"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/cybersecurity"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-operational-resilience-testing"/>
+    <skos:broadMatch rdf:resource="http://eurovoc.europa.eu/c_406ad4cc"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/important-entity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Important entity</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">entité importante</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">wichtige Einrichtung</skos:prefLabel>
+    <skos:definition xml:lang="en">A type of organization in listed sectors that is subject to a lighter supervisory regime than essential entities under the NIS2 Directive.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/essential-entity"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022L2555"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Personal data</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">données personnelles</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">persönliche Daten</skos:prefLabel>
+    <skos:definition xml:lang="en">Any information relating to an identified or identifiable natural person.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/special-categories-of-personal-data"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-subject"/>
+    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/5595"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-third-party-risk">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">ICT third-party risk</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">risque lié aux prestataires tiers de services TIC</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">IKT-Drittparteienrisiko</skos:prefLabel>
+    <skos:definition xml:lang="en">The risk that arises from relying on external providers of ICT services, such as cloud providers.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-risk-management"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection-impact-assessment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data protection impact assessment</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">analyse d'impact relative à la protection des données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Datenschutz-Folgenabschätzung</skos:prefLabel>
+    <skos:altLabel xml:lang="en">DPIA</skos:altLabel>
+    <skos:definition xml:lang="en">An assessment of the risks that a processing operation poses to individuals, required before processing that is likely to be high risk.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/cybersecurity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Cybersecurity</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">cybersécurité</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Cybersicherheit</skos:prefLabel>
+    <skos:definition xml:lang="en">The activities needed to protect network and information systems, their users and other people from cyber threats.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
+    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/product-with-digital-elements"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-risk-management"/>
+    <skos:closeMatch rdf:resource="http://eurovoc.europa.eu/c_04ae3ba8"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022L2555"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/general-purpose-ai-model">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">General-purpose AI model</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">modèle d'IA à usage général</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">KI-Modell mit allgemeinem Verwendungszweck</skos:prefLabel>
+    <skos:definition xml:lang="en">An AI model trained on large amounts of data that can competently perform a wide range of tasks and be built into many systems.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-portability">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data portability</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">portabilité des données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Datenübertragbarkeit</skos:prefLabel>
+    <skos:definition xml:lang="en">The right of a person to receive their personal data in a structured, commonly used and machine-readable format and to pass it to another controller.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-subject"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
@@ -192,16 +813,80 @@
     <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/c_7e60137b"/>
     <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/important-entity">
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/special-categories-of-personal-data">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Important entity</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">entité importante</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">wichtige Einrichtung</skos:prefLabel>
-    <skos:definition xml:lang="en">A type of organization in listed sectors that is subject to a lighter supervisory regime than essential entities under the NIS2 Directive.</skos:definition>
+    <skos:prefLabel xml:lang="en">Special categories of personal data</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">catégories particulières de données à caractère personnel</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">besondere Kategorien personenbezogener Daten</skos:prefLabel>
+    <skos:definition xml:lang="en">Sensitive personal data, such as health data or data revealing racial or ethnic origin, that is subject to stricter processing rules.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/persistent-identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Persistent identifier</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">identifiant pérenne</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">persistenter Identifikator</skos:prefLabel>
+    <skos:altLabel xml:lang="en">PID</skos:altLabel>
+    <skos:definition xml:lang="en">A long-lasting reference, such as a URI, that identifies a resource and stays stable over time.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/linked-data"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-portal">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Open data portal</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">portail de données ouvertes</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Portal für offene Daten</skos:prefLabel>
+    <skos:definition xml:lang="en">A web site where public bodies publish and describe datasets so that people can find and download them.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-catalog"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-controller">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data controller</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">responsable du traitement</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Verantwortlicher</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Controller</skos:altLabel>
+    <skos:definition xml:lang="en">The party that decides why and how personal data is processed.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-processor"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/essential-entity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Essential entity</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">entité essentielle</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">wesentliche Einrichtung</skos:prefLabel>
+    <skos:definition xml:lang="en">A type of organization in sectors of high criticality that is subject to the full supervisory regime of the NIS2 Directive.</skos:definition>
     <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/essential-entity"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/important-entity"/>
     <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022L2555"/>
+    <lab:pendingReview>fr</lab:pendingReview>
+    <lab:pendingReview>de</lab:pendingReview>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-user">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
+    <skos:prefLabel xml:lang="en">Data user</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">utilisateur de données</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Datennutzer</skos:prefLabel>
+    <skos:definition xml:lang="en">A party that has lawful access to data and may use it for commercial or non-commercial purposes.</skos:definition>
+    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
+    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-holder"/>
+    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868"/>
     <lab:pendingReview>fr</lab:pendingReview>
     <lab:pendingReview>de</lab:pendingReview>
   </rdf:Description>
@@ -241,153 +926,6 @@
     <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/5181"/>
     <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Open data</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">données ouvertes</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">offene Daten</skos:prefLabel>
-    <skos:definition xml:lang="en">Data that anyone can freely access, use and share, subject at most to conditions such as attribution.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-value-dataset"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/machine-readable-format"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-license"/>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/c_5ea6e5c4"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/connected-product">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Connected product</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">produit connecté</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">vernetztes Produkt</skos:prefLabel>
-    <skos:definition xml:lang="en">An item that obtains, generates or collects data about its use or surroundings and can communicate that data.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance"/>
-    <skos:closeMatch rdf:resource="http://eurovoc.europa.eu/c_b12a760a"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32023R2854"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/public-sector-information">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Public sector information</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">informations du secteur public</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Informationen des öffentlichen Sektors</skos:prefLabel>
-    <skos:altLabel xml:lang="en">PSI</skos:altLabel>
-    <skos:definition xml:lang="en">Documents and data held by public sector bodies, often made available for re-use.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/re-use-of-documents"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/application-programming-interface">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Application programming interface</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">interface de programmation d'applications</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Anwendungsprogrammierschnittstelle</skos:prefLabel>
-    <skos:altLabel xml:lang="en">API</skos:altLabel>
-    <skos:definition xml:lang="en">A set of functions and rules that lets software request data or services from another system.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-value-dataset"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/human-oversight">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Human oversight</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">contrôle humain</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">menschliche Aufsicht</skos:prefLabel>
-    <skos:definition xml:lang="en">Measures that let people monitor, understand and, where needed, intervene in the operation of a high-risk AI system.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-risk-ai-system"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/incident-reporting">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Incident reporting</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">notification d'incident</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Meldung von Vorfällen</skos:prefLabel>
-    <skos:definition xml:lang="en">The duty to notify competent authorities, and sometimes affected parties, of significant incidents within set deadlines.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-incident"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022L2555"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-risk-ai-system">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">High-risk AI system</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">système d'IA à haut risque</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Hochrisiko-KI-System</skos:prefLabel>
-    <skos:definition xml:lang="en">An AI system in a category that the AI Act subjects to strict requirements because of risks to health, safety or fundamental rights.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-system"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/conformity-assessment"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/human-oversight"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/risk-based-approach">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Risk-based approach</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">approche fondée sur les risques</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">risikobasierter Ansatz</skos:prefLabel>
-    <skos:definition xml:lang="en">A regulatory approach in which obligations grow with the level of risk.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/prohibited-ai-practice"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/fair-principles">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">FAIR principles</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">principes FAIR</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">FAIR-Prinzipien</skos:prefLabel>
-    <skos:definition xml:lang="en">Guiding principles for making data findable, accessible, interoperable and reusable.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/metadata"/>
-    <dct:source rdf:resource="https://doi.org/10.1038/sdata.2016.18"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-regulatory-sandbox">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">AI regulatory sandbox</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">bac à sable réglementaire de l'IA</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">KI-Reallabor</skos:prefLabel>
-    <skos:definition xml:lang="en">A controlled framework in which AI systems can be developed and tested under regulatory supervision before they are placed on the market.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-processor">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data processor</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">sous-traitant</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Auftragsverarbeiter</skos:prefLabel>
-    <skos:altLabel xml:lang="en">Processor</skos:altLabel>
-    <skos:definition xml:lang="en">A party that processes personal data on behalf of a controller.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-controller"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-provider">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
@@ -398,301 +936,6 @@
     <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
     <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-deployer"/>
     <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/conformity-assessment">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Conformity assessment</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">évaluation de la conformité</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Konformitätsbewertung</skos:prefLabel>
-    <skos:definition xml:lang="en">A process that shows whether a product or system meets the requirements that apply to it.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-risk-ai-system"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-value-dataset">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">High-value dataset</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">série de données de forte valeur</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">hochwertiger Datensatz</skos:prefLabel>
-    <skos:definition xml:lang="en">A dataset whose re-use brings important benefits for society, the environment and the economy, and for which special availability rules apply.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/application-programming-interface"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32023R0138"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/persistent-identifier">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Persistent identifier</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">identifiant pérenne</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">persistenter Identifikator</skos:prefLabel>
-    <skos:altLabel xml:lang="en">PID</skos:altLabel>
-    <skos:definition xml:lang="en">A long-lasting reference, such as a URI, that identifies a resource and stays stable over time.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/linked-data"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:topConceptOf rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Open data and reuse</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">données ouvertes et réutilisation</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">offene Daten und Weiterverwendung</skos:prefLabel>
-    <skos:definition xml:lang="en">Making public sector data available in open formats and under open conditions so that anyone can re-use it.</skos:definition>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/public-sector-information"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/re-use-of-documents"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/machine-readable-format"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/application-programming-interface"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-license"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-portal"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/special-categories-of-personal-data">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Special categories of personal data</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">catégories particulières de données à caractère personnel</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">besondere Kategorien personenbezogener Daten</skos:prefLabel>
-    <skos:definition xml:lang="en">Sensitive personal data, such as health data or data revealing racial or ethnic origin, that is subject to stricter processing rules.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/product-with-digital-elements">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Product with digital elements</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">produit comportant des éléments numériques</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Produkt mit digitalen Elementen</skos:prefLabel>
-    <skos:definition xml:lang="en">A software or hardware product, together with its remote data processing solutions, that is covered by the cybersecurity requirements of the Cyber Resilience Act.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/cybersecurity"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R2847"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/controlled-vocabulary">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Controlled vocabulary</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">vocabulaire contrôlé</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">kontrolliertes Vokabular</skos:prefLabel>
-    <skos:definition xml:lang="en">An agreed list of terms used to describe things in a consistent way.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/thesaurus"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data quality</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">qualité des données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Datenqualität</skos:prefLabel>
-    <skos:definition xml:lang="en">The degree to which data is accurate, complete, consistent, timely and fit for its intended use.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/66901"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-altruism">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data altruism</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">altruisme en matière de données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Datenaltruismus</skos:prefLabel>
-    <skos:definition xml:lang="en">The voluntary sharing of data, based on consent or permission, for purposes of general interest and without seeking a reward.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <dct:title xml:lang="en">EU Data Governance Thesaurus</dct:title>
-    <dct:description xml:lang="en">A small multilingual thesaurus (English, French, German) on EU data and AI governance: data protection, data governance, AI governance, open data and reuse, digital resilience, and data quality and metadata.</dct:description>
-    <dct:creator rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori"/>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-03</dct:issued>
-    <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA"/>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU"/>
-    <owl:versionInfo>1.0.0</owl:versionInfo>
-    <skos:scopeNote xml:lang="en">Definitions are written in English. French and German labels are marked pending review unless they come from EuroVoc.</skos:scopeNote>
-    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance"/>
-    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
-    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
-    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
-    <skos:hasTopConcept rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-incident">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">ICT incident</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">incident lié aux TIC</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">IKT-bezogener Vorfall</skos:prefLabel>
-    <skos:definition xml:lang="en">A single event, or a series of linked events, not planned by the organization, that harms the security of network and information systems.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/incident-reporting"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/transparency-obligation">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Transparency obligation</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">obligation de transparence</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Transparenzpflicht</skos:prefLabel>
-    <skos:definition xml:lang="en">A duty to inform people, for example that they are interacting with an AI system or viewing AI-generated content.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection-impact-assessment">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data protection impact assessment</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">analyse d'impact relative à la protection des données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Datenschutz-Folgenabschätzung</skos:prefLabel>
-    <skos:altLabel xml:lang="en">DPIA</skos:altLabel>
-    <skos:definition xml:lang="en">An assessment of the risks that a processing operation poses to individuals, required before processing that is likely to be high risk.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data sharing</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">partage de données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Datenaustausch</skos:prefLabel>
-    <skos:definition xml:lang="en">Making data available to other parties for use under agreed conditions.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-holder"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-user"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-intermediation-service"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-altruism"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/common-european-data-space"/>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/c_eaccd9f4"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:topConceptOf rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Digital resilience</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">résilience numérique</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">digitale Resilienz</skos:prefLabel>
-    <skos:definition xml:lang="en">The ability of organizations and systems to withstand, respond to and recover from disruptions of digital technology.</skos:definition>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/cybersecurity"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-risk-management"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-incident"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-operational-resilience-testing"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/essential-entity"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/important-entity"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-operational-resilience-testing">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Digital operational resilience testing</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">tests de résilience opérationnelle numérique</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Testen der digitalen operationalen Resilienz</skos:prefLabel>
-    <skos:definition xml:lang="en">Tests, such as vulnerability scans and threat-led penetration tests, that check whether ICT systems can withstand disruption.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-risk-management"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/linked-data">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Linked data</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">données liées</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">verknüpfte Daten</skos:prefLabel>
-    <skos:altLabel xml:lang="en">Linked Open Data</skos:altLabel>
-    <skos:definition xml:lang="en">A method of publishing structured data on the web with URIs and RDF so that datasets can be linked to each other.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/persistent-identifier"/>
-    <skos:closeMatch rdf:resource="http://eurovoc.europa.eu/c_a17a2156"/>
-    <dct:source rdf:resource="https://www.w3.org/DesignIssues/LinkedData.html"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-third-party-risk">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">ICT third-party risk</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">risque lié aux prestataires tiers de services TIC</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">IKT-Drittparteienrisiko</skos:prefLabel>
-    <skos:definition xml:lang="en">The risk that arises from relying on external providers of ICT services, such as cloud providers.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-risk-management"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:topConceptOf rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data quality and metadata</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">qualité des données et métadonnées</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Datenqualität und Metadaten</skos:prefLabel>
-    <skos:definition xml:lang="en">Practices and standards that keep data accurate, well described and easy to find, understand and combine.</skos:definition>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/metadata"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/controlled-vocabulary"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ontology"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/linked-data"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/persistent-identifier"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/interoperability"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-standard"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/reference-data"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/fair-principles"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/reference-data">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Reference data</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">données de référence</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Referenzdaten</skos:prefLabel>
-    <skos:definition xml:lang="en">Shared lists of values, such as country codes or code lists, that are used to classify other data.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-standard"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-controller">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data controller</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">responsable du traitement</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Verantwortlicher</skos:prefLabel>
-    <skos:altLabel xml:lang="en">Controller</skos:altLabel>
-    <skos:definition xml:lang="en">The party that decides why and how personal data is processed.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-processor"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
     <lab:pendingReview>fr</lab:pendingReview>
     <lab:pendingReview>de</lab:pendingReview>
   </rdf:Description>
@@ -707,249 +950,6 @@
     <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-catalog"/>
     <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/fair-principles"/>
     <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/c_40f54e0c"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-catalog">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data catalog</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">catalogue de données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Datenkatalog</skos:prefLabel>
-    <skos:definition xml:lang="en">A curated collection of metadata descriptions of datasets that helps people find and understand data.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/metadata"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-portal"/>
-    <dct:source rdf:resource="https://www.w3.org/TR/vocab-dcat-3/"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-portal">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Open data portal</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">portail de données ouvertes</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Portal für offene Daten</skos:prefLabel>
-    <skos:definition xml:lang="en">A web site where public bodies publish and describe datasets so that people can find and download them.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-catalog"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-holder">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data holder</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">détenteur de données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Dateninhaber</skos:prefLabel>
-    <skos:definition xml:lang="en">A party that has the right or the ability to grant access to, or to share, certain data.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-user"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32023R2854"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-portability">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data portability</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">portabilité des données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Datenübertragbarkeit</skos:prefLabel>
-    <skos:definition xml:lang="en">The right of a person to receive their personal data in a structured, commonly used and machine-readable format and to pass it to another controller.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-subject"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data-breach">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Personal data breach</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">violation de données à caractère personnel</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Verletzung des Schutzes personenbezogener Daten</skos:prefLabel>
-    <skos:definition xml:lang="en">A security incident that leads to the accidental or unlawful destruction, loss, alteration, disclosure of or access to personal data.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-system">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">AI system</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">système d'IA</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">KI-System</skos:prefLabel>
-    <skos:definition xml:lang="en">A machine-based system that infers from its inputs how to generate outputs such as predictions, content, recommendations or decisions.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-risk-ai-system"/>
-    <skos:closeMatch rdf:resource="http://eurovoc.europa.eu/3030"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/thesaurus">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Thesaurus</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">thésaurus</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Thesaurus</skos:prefLabel>
-    <skos:definition xml:lang="en">A controlled vocabulary whose terms are linked by relationships such as broader, narrower and related.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/controlled-vocabulary"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ontology"/>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/4138"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/anonymization">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Anonymization</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">anonymisation</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Anonymisierung</skos:prefLabel>
-    <skos:altLabel xml:lang="en">Anonymisation</skos:altLabel>
-    <skos:definition xml:lang="en">Changing data irreversibly so that individuals can no longer be identified.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/pseudonymization"/>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/c_7bb1a021"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection-by-design">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Data protection by design</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">protection des données dès la conception</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Datenschutz durch Technikgestaltung</skos:prefLabel>
-    <skos:altLabel xml:lang="en">Privacy by design</skos:altLabel>
-    <skos:definition xml:lang="en">Building data protection measures into systems and processes from the start and by default.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <skos:broadMatch rdf:resource="http://eurovoc.europa.eu/2828"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ontology">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Ontology</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">ontologie</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Ontologie</skos:prefLabel>
-    <skos:definition xml:lang="en">A formal, machine-readable model of the classes, properties and relationships in a domain.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-quality-and-metadata"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/thesaurus"/>
-    <skos:exactMatch rdf:resource="http://eurovoc.europa.eu/c_782eaeb3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/common-european-data-space">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Common European data space</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">espace européen commun de données</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">gemeinsamer europäischer Datenraum</skos:prefLabel>
-    <skos:definition xml:lang="en">A sector-specific or cross-sector framework for trusted data sharing in the EU, built on shared rules, standards and infrastructure.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/interoperability"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-license">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Open license</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">licence ouverte</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">offene Lizenz</skos:prefLabel>
-    <skos:altLabel xml:lang="en">Open licence</skos:altLabel>
-    <skos:definition xml:lang="en">A license that allows data to be freely re-used, with at most minimal conditions such as attribution.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/cybersecurity">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Cybersecurity</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">cybersécurité</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Cybersicherheit</skos:prefLabel>
-    <skos:definition xml:lang="en">The activities needed to protect network and information systems, their users and other people from cyber threats.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
-    <skos:narrower rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/product-with-digital-elements"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-risk-management"/>
-    <skos:closeMatch rdf:resource="http://eurovoc.europa.eu/c_04ae3ba8"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022L2555"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/pseudonymization">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Pseudonymization</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">pseudonymisation</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Pseudonymisierung</skos:prefLabel>
-    <skos:altLabel xml:lang="en">Pseudonymisation</skos:altLabel>
-    <skos:definition xml:lang="en">Processing personal data so that it can no longer be attributed to a person without additional information that is kept separately.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/anonymization"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/essential-entity">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Essential entity</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">entité essentielle</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">wesentliche Einrichtung</skos:prefLabel>
-    <skos:definition xml:lang="en">A type of organization in sectors of high criticality that is subject to the full supervisory regime of the NIS2 Directive.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/important-entity"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022L2555"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/right-to-erasure">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Right to erasure</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">droit à l'effacement</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Recht auf Löschung</skos:prefLabel>
-    <skos:altLabel xml:lang="en">Right to be forgotten</skos:altLabel>
-    <skos:definition xml:lang="en">The right of a person to have their personal data deleted under certain conditions.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-subject"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/general-purpose-ai-model">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">General-purpose AI model</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">modèle d'IA à usage général</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">KI-Modell mit allgemeinem Verwendungszweck</skos:prefLabel>
-    <skos:definition xml:lang="en">An AI model trained on large amounts of data that can competently perform a wide range of tasks and be built into many systems.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/consent">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Consent</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">consentement</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Einwilligung</skos:prefLabel>
-    <skos:definition xml:lang="en">A freely given, specific, informed and unambiguous indication of a person's wishes that they agree to the processing of their personal data.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/re-use-of-documents">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/scheme/eu-data-governance"/>
-    <skos:prefLabel xml:lang="en">Re-use of documents</skos:prefLabel>
-    <skos:prefLabel xml:lang="fr">réutilisation de documents</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Weiterverwendung von Dokumenten</skos:prefLabel>
-    <skos:definition xml:lang="en">Use of documents held by public sector bodies for commercial or non-commercial purposes other than their original public task.</skos:definition>
-    <skos:broader rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
-    <skos:related rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/public-sector-information"/>
-    <dct:source rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
-    <lab:pendingReview>fr</lab:pendingReview>
-    <lab:pendingReview>de</lab:pendingReview>
   </rdf:Description>
   <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
