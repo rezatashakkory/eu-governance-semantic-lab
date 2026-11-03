@@ -105,6 +105,18 @@ shp:ConceptShape a sh:NodeShape ;
             }
         """
     ] ;
+    # Required: skos:broader is always mirrored by skos:narrower on the parent.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:prefixes <https://rezatashakkory.github.io/eu-governance-semantic-lab/shapes/> ;
+        sh:message "This concept lists {?parent} as broader, but {?parent} does not list it as narrower."@en ;
+        sh:select """
+            SELECT $this ?parent WHERE {
+                $this skos:broader ?parent .
+                FILTER NOT EXISTS { ?parent skos:narrower $this }
+            }
+        """
+    ] ;
     # Required: skos:narrower is always mirrored by skos:broader.
     sh:sparql [
         a sh:SPARQLConstraint ;

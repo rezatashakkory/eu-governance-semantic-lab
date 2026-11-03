@@ -21,6 +21,7 @@ NEGATIVE_CASES = [
     ("broken_concept_no_definition.ttl", "needs a definition"),
     ("broken_duplicate_label.ttl", "already used by another concept"),
     ("broken_two_labels_same_language.ttl", "only one preferred label per language"),
+    ("broken_parent_not_updated.ttl", "does not list it as narrower"),
     ("broken_celex_pattern.ttl", "CELEX number such as 32016R0679"),
     ("broken_celex_type_mismatch.ttl", "type letter R"),
     ("broken_dataset_no_license_no_publisher.ttl", "must have a license"),
