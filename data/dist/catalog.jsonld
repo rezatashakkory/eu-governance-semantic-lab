@@ -1,0 +1,476 @@
+{
+  "@context": {
+    "act": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/",
+    "cpt": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "lab": "https://rezatashakkory.github.io/eu-governance-semantic-lab/def/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/dataset/ontology",
+      "@type": "dcat:Dataset",
+      "dcat:distribution": [
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/ontology-ttl"
+        },
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/ontology-jsonld"
+        },
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/ontology-rdf"
+        }
+      ],
+      "dcat:keyword": [
+        {
+          "@language": "en",
+          "@value": "ontology"
+        },
+        {
+          "@language": "en",
+          "@value": "OWL"
+        },
+        {
+          "@language": "en",
+          "@value": "legal acts"
+        }
+      ],
+      "dcat:landingPage": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab"
+      },
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/JUST"
+      },
+      "dct:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dct:description": {
+        "@language": "en",
+        "@value": "A small OWL ontology with classes for legal acts, regulations, directives, authorities and obligations, and properties such as amends, repeals, has topic and has CELEX number."
+      },
+      "dct:issued": {
+        "@type": "xsd:date",
+        "@value": "2026-11-03"
+      },
+      "dct:language": {
+        "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:modified": {
+        "@type": "xsd:date",
+        "@value": "2026-11-03"
+      },
+      "dct:publisher": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Legal Acts Ontology"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/dataset/acts",
+      "@type": "dcat:Dataset",
+      "dcat:distribution": [
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/acts-ttl"
+        },
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/acts-jsonld"
+        },
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/acts-rdf"
+        }
+      ],
+      "dcat:keyword": [
+        {
+          "@language": "en",
+          "@value": "EU law"
+        },
+        {
+          "@language": "en",
+          "@value": "CELEX"
+        },
+        {
+          "@language": "en",
+          "@value": "ELI"
+        },
+        {
+          "@language": "en",
+          "@value": "linked data"
+        }
+      ],
+      "dcat:landingPage": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab"
+      },
+      "dcat:theme": {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/JUST"
+      },
+      "dct:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dct:description": {
+        "@language": "en",
+        "@value": "Twenty EU legal acts on data protection, data governance, AI, open data and digital resilience, with CELEX numbers, ELI identifiers, official English titles, document dates, legal relations and links to thesaurus topics."
+      },
+      "dct:issued": {
+        "@type": "xsd:date",
+        "@value": "2026-11-03"
+      },
+      "dct:language": {
+        "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:modified": {
+        "@type": "xsd:date",
+        "@value": "2026-11-03"
+      },
+      "dct:publisher": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Legal Acts on Data and AI Governance"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/dataset/thesaurus",
+      "@type": "dcat:Dataset",
+      "dcat:distribution": [
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/thesaurus-ttl"
+        },
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/thesaurus-jsonld"
+        },
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/thesaurus-rdf"
+        }
+      ],
+      "dcat:keyword": [
+        {
+          "@language": "en",
+          "@value": "thesaurus"
+        },
+        {
+          "@language": "en",
+          "@value": "SKOS"
+        },
+        {
+          "@language": "en",
+          "@value": "data governance"
+        },
+        {
+          "@language": "en",
+          "@value": "multilingual"
+        }
+      ],
+      "dcat:landingPage": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab"
+      },
+      "dcat:theme": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/data-theme/GOVE"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/data-theme/TECH"
+        }
+      ],
+      "dct:accrualPeriodicity": {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+      },
+      "dct:description": {
+        "@language": "en",
+        "@value": "A multilingual SKOS thesaurus (English, French, German) with 68 concepts on data protection, data governance, AI governance, open data and reuse, digital resilience, and data quality and metadata. French and German labels are pending review unless taken from EuroVoc."
+      },
+      "dct:issued": {
+        "@type": "xsd:date",
+        "@value": "2026-11-03"
+      },
+      "dct:language": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/FRA"
+        },
+        {
+          "@id": "http://publications.europa.eu/resource/authority/language/DEU"
+        }
+      ],
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:modified": {
+        "@type": "xsd:date",
+        "@value": "2026-11-03"
+      },
+      "dct:publisher": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Data Governance Thesaurus"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/ontology-jsonld",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/legal-acts-ontology.jsonld"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/legal-acts-ontology.jsonld"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
+      },
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Legal Acts Ontology (JSON-LD)"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/ontology-rdf",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/legal-acts-ontology.rdf"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/legal-acts-ontology.rdf"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/rdf+xml"
+      },
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Legal Acts Ontology (RDF/XML)"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/acts-ttl",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dataset/legal-acts.ttl"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dataset/legal-acts.ttl"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/text/turtle"
+      },
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Legal Acts on Data and AI Governance (Turtle)"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/acts-jsonld",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/legal-acts.jsonld"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/legal-acts.jsonld"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
+      },
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Legal Acts on Data and AI Governance (JSON-LD)"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/thesaurus-rdf",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/eu-data-governance.rdf"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/eu-data-governance.rdf"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/rdf+xml"
+      },
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Data Governance Thesaurus (RDF/XML)"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/ontology-ttl",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/ontology/legal-acts.ttl"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/ontology/legal-acts.ttl"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/text/turtle"
+      },
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Legal Acts Ontology (Turtle)"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/thesaurus-jsonld",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/eu-data-governance.jsonld"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/eu-data-governance.jsonld"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
+      },
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Data Governance Thesaurus (JSON-LD)"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/acts-rdf",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/dist/legal-acts.rdf"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/dist/legal-acts.rdf"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/rdf+xml"
+      },
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Legal Acts on Data and AI Governance (RDF/XML)"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/distribution/thesaurus-ttl",
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab/blob/main/data/vocabulary/eu-data-governance.ttl"
+      },
+      "dcat:downloadURL": {
+        "@id": "https://raw.githubusercontent.com/rezatashakkory/eu-governance-semantic-lab/main/data/vocabulary/eu-data-governance.ttl"
+      },
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/text/turtle"
+      },
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+      },
+      "dct:license": {
+        "@id": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Data Governance Thesaurus (Turtle)"
+      }
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori",
+      "@type": "foaf:Agent",
+      "foaf:name": "Reza Tashakkori"
+    },
+    {
+      "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/catalog/eu-governance-semantic-lab",
+      "@type": "dcat:Catalog",
+      "dcat:dataset": [
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/dataset/thesaurus"
+        },
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/dataset/ontology"
+        },
+        {
+          "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/dataset/acts"
+        }
+      ],
+      "dct:description": {
+        "@language": "en",
+        "@value": "Catalog of the linked datasets published by the EU Data Governance Semantic Lab, an independent learning project."
+      },
+      "dct:issued": {
+        "@type": "xsd:date",
+        "@value": "2026-11-03"
+      },
+      "dct:language": {
+        "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+      },
+      "dct:publisher": {
+        "@id": "https://rezatashakkory.github.io/eu-governance-semantic-lab/id/agent/reza-tashakkori"
+      },
+      "dct:title": {
+        "@language": "en",
+        "@value": "EU Data Governance Semantic Lab Catalog"
+      },
+      "foaf:homepage": {
+        "@id": "https://github.com/rezatashakkory/eu-governance-semantic-lab"
+      }
+    }
+  ]
+}

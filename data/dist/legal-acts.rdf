@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:lab="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1183">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) 2024/1183 of the European Parliament and of the Council of 11 April 2024 amending Regulation (EU) No 910/2014 as regards establishing the European Digital Identity Framework</dct:title>
+    <dct:alternative xml:lang="en">eIDAS 2 amending Regulation</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-11</dct:date>
+    <lab:hasCELEX>32024R1183</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2024/1183/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1183"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/interoperability"/>
+    <lab:amends rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32014R0910"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016R0679">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) (Text with EEA relevance)</dct:title>
+    <dct:alternative xml:lang="en">GDPR</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-04-27</dct:date>
+    <lab:hasCELEX>32016R0679</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2016/679/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/special-categories-of-personal-data"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-subject"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-controller"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-processor"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/consent"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/right-to-erasure"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-portability"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data-breach"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/pseudonymization"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection-impact-assessment"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/international-data-transfer"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection-by-design"/>
+    <lab:repeals rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/31995L0046"/>
+    <lab:providesFor rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/body/edpb"/>
+    <lab:imposesObligation rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/obligation/notify-personal-data-breach"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R0868">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) 2022/868 of the European Parliament and of the Council of 30 May 2022 on European data governance and amending Regulation (EU) 2018/1724 (Data Governance Act) (Text with EEA relevance)</dct:title>
+    <dct:alternative xml:lang="en">Data Governance Act</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-30</dct:date>
+    <lab:hasCELEX>32022R0868</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2022/868/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0868"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-holder"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-user"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-intermediation-service"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-altruism"/>
+    <lab:providesFor rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/body/edib"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022R2554">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience for the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011 (Text with EEA relevance)</dct:title>
+    <dct:alternative xml:lang="en">DORA</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-14</dct:date>
+    <lab:hasCELEX>32022R2554</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2022/2554/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R2554"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-risk-management"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-incident"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/incident-reporting"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-operational-resilience-testing"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ict-third-party-risk"/>
+    <lab:imposesObligation rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/obligation/report-major-ict-incidents"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32023R0138">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/ImplementingRegulation"/>
+    <dct:title xml:lang="en">Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use (Text with EEA relevance)</dct:title>
+    <dct:alternative xml:lang="en">High-value datasets implementing regulation</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-21</dct:date>
+    <lab:hasCELEX>32023R0138</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg_impl/2023/138/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0138"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-value-dataset"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/application-programming-interface"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/machine-readable-format"/>
+    <lab:isBasedOn rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32025R0327">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) 2025/327 of the European Parliament and of the Council of 11 February 2025 on the European Health Data Space and amending Directive 2011/24/EU and Regulation (EU) 2024/2847 (Text with EEA relevance)</dct:title>
+    <dct:alternative xml:lang="en">European Health Data Space Regulation</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-02-11</dct:date>
+    <lab:hasCELEX>32025R0327</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2025/327/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/common-european-data-space"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/special-categories-of-personal-data"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data"/>
+    <lab:amends rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R2847"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R1689">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (Text with EEA relevance)</dct:title>
+    <dct:alternative xml:lang="en">AI Act</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-13</dct:date>
+    <lab:hasCELEX>32024R1689</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2024/1689/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-governance"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-system"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-risk-ai-system"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/general-purpose-ai-model"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/prohibited-ai-practice"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/risk-based-approach"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-provider"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-deployer"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/conformity-assessment"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/transparency-obligation"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/human-oversight"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/ai-regulatory-sandbox"/>
+    <lab:providesFor rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/body/ai-board"/>
+    <lab:imposesObligation rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/obligation/inform-people-about-ai"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32014R0910">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC</dct:title>
+    <dct:alternative xml:lang="en">eIDAS Regulation</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-23</dct:date>
+    <lab:hasCELEX>32014R0910</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2014/910/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0910"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/interoperability"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32007L0002">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Directive"/>
+    <dct:title xml:lang="en">Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)</dct:title>
+    <dct:alternative xml:lang="en">INSPIRE Directive</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-03-14</dct:date>
+    <lab:hasCELEX>32007L0002</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/dir/2007/2/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32007L0002"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/interoperability"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/metadata"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-standard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32022L2555">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Directive"/>
+    <dct:title xml:lang="en">Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS 2 Directive) (Text with EEA relevance)</dct:title>
+    <dct:alternative xml:lang="en">NIS2 Directive</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-14</dct:date>
+    <lab:hasCELEX>32022L2555</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/dir/2022/2555/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/cybersecurity"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/digital-resilience"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/essential-entity"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/important-entity"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/incident-reporting"/>
+    <lab:amends rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32014R0910"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32003L0098">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Directive"/>
+    <dct:title xml:lang="en">Directive 2003/98/EC of the European Parliament and of the Council of 17 November 2003 on the re-use of public sector information</dct:title>
+    <dct:alternative xml:lang="en">PSI Directive (2003)</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-11-17</dct:date>
+    <lab:hasCELEX>32003L0098</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/dir/2003/98/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32003L0098"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/public-sector-information"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/re-use-of-documents"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R0903">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) 2024/903 of the European Parliament and of the Council of 13 March 2024 laying down measures for a high level of public sector interoperability across the Union (Interoperable Europe Act)</dct:title>
+    <dct:alternative xml:lang="en">Interoperable Europe Act</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-13</dct:date>
+    <lab:hasCELEX>32024R0903</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2024/903/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R0903"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/interoperability"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-standard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32002L0058">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Directive"/>
+    <dct:title xml:lang="en">Directive 2002/58/EC of the European Parliament and of the Council of 12 July 2002 concerning the processing of personal data and the protection of privacy in the electronic communications sector (Directive on privacy and electronic communications)</dct:title>
+    <dct:alternative xml:lang="en">ePrivacy Directive</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-12</dct:date>
+    <lab:hasCELEX>32002L0058</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/dir/2002/58/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32002L0058"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32018R1807">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) 2018/1807 of the European Parliament and of the Council of 14 November 2018 on a framework for the free flow of non-personal data in the European Union (Text with EEA relevance.)</dct:title>
+    <dct:alternative xml:lang="en">Free flow of non-personal data regulation</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-11-14</dct:date>
+    <lab:hasCELEX>32018R1807</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2018/1807/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018R1807"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-processing-service"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32019L1024">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Directive"/>
+    <dct:title xml:lang="en">Directive (EU) 2019/1024 of the European Parliament and of the Council of 20 June 2019 on open data and the re-use of public sector information (recast)</dct:title>
+    <dct:alternative xml:lang="en">Open Data Directive</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-06-20</dct:date>
+    <lab:hasCELEX>32019L1024</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L1024"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data-and-reuse"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-data"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/public-sector-information"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/re-use-of-documents"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/high-value-dataset"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/machine-readable-format"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/application-programming-interface"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/open-license"/>
+    <lab:repeals rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32003L0098"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32023R2854">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) 2023/2854 of the European Parliament and of the Council of 13 December 2023 on harmonised rules on fair access to and use of data and amending Regulation (EU) 2017/2394 and Directive (EU) 2020/1828 (Data Act) (Text with EEA relevance)</dct:title>
+    <dct:alternative xml:lang="en">Data Act</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-12-13</dct:date>
+    <lab:hasCELEX>32023R2854</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2023/2854/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2854"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-governance"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-holder"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-sharing"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/connected-product"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-processing-service"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/obligation/notify-personal-data-breach">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Obligation"/>
+    <rdfs:label xml:lang="en">Notify a personal data breach to the supervisory authority</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/31995L0046">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Directive"/>
+    <dct:title xml:lang="en">Directive 95/46/EC of the European Parliament and of the Council of 24 October 1995 on the protection of individuals with regard to the processing of personal data and on the free movement of such data</dct:title>
+    <dct:alternative xml:lang="en">Data Protection Directive (1995)</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-10-24</dct:date>
+    <lab:hasCELEX>31995L0046</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/dir/1995/46/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31995L0046"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32018R1725">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) 2018/1725 of the European Parliament and of the Council of 23 October 2018 on the protection of natural persons with regard to the processing of personal data by the Union institutions, bodies, offices and agencies and on the free movement of such data, and repealing Regulation (EC) No 45/2001 and Decision No 1247/2002/EC (Text with EEA relevance.)</dct:title>
+    <dct:alternative xml:lang="en">EU institutions data protection regulation</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-10-23</dct:date>
+    <lab:hasCELEX>32018R1725</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2018/1725/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018R1725"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/obligation/inform-people-about-ai">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Obligation"/>
+    <rdfs:label xml:lang="en">Inform people when they interact with an AI system</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32024R2847">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Regulation"/>
+    <dct:title xml:lang="en">Regulation (EU) 2024/2847 of the European Parliament and of the Council of 23 October 2024 on horizontal cybersecurity requirements for products with digital elements and amending Regulations (EU) No 168/2013 and (EU) 2019/1020 and Directive (EU) 2020/1828 (Cyber Resilience Act) (Text with EEA relevance)</dct:title>
+    <dct:alternative xml:lang="en">Cyber Resilience Act</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-23</dct:date>
+    <lab:hasCELEX>32024R2847</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/reg/2024/2847/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R2847"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/cybersecurity"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/product-with-digital-elements"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/act/32016L0680">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Directive"/>
+    <dct:title xml:lang="en">Directive (EU) 2016/680 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data by competent authorities for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, and on the free movement of such data, and repealing Council Framework Decision 2008/977/JHA</dct:title>
+    <dct:alternative xml:lang="en">Law Enforcement Directive</dct:alternative>
+    <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-04-27</dct:date>
+    <lab:hasCELEX>32016L0680</lab:hasCELEX>
+    <lab:hasELI rdf:resource="http://data.europa.eu/eli/dir/2016/680/oj"/>
+    <rdfs:seeAlso rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L0680"/>
+    <lab:regulates rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/data-protection"/>
+    <lab:hasTopic rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/concept/personal-data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/body/edib">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Authority"/>
+    <rdfs:label xml:lang="en">European Data Innovation Board</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/body/edpb">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Authority"/>
+    <rdfs:label xml:lang="en">European Data Protection Board</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/obligation/report-major-ict-incidents">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Obligation"/>
+    <rdfs:label xml:lang="en">Report major ICT-related incidents to the competent authority</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rezatashakkory.github.io/eu-governance-semantic-lab/id/body/ai-board">
+    <rdf:type rdf:resource="https://rezatashakkory.github.io/eu-governance-semantic-lab/def/Authority"/>
+    <rdfs:label xml:lang="en">European Artificial Intelligence Board</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

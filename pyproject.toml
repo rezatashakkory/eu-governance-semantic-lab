@@ -22,12 +22,22 @@ dev = [
     "ruff>=0.6",
     "pre-commit>=3.7",
 ]
+app = [
+    "streamlit>=1.40",
+    "pyvis>=0.3.2",
+]
+docs = [
+    "pylode>=3.0",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+filterwarnings = [
+    "ignore:ConjunctiveGraph is deprecated:DeprecationWarning",
+]
 
 [tool.ruff]
 line-length = 100
